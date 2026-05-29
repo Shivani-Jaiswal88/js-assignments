@@ -145,7 +145,6 @@ function isAllowed(role) {
   // TODO: Return true if role is NOT exactly "banned"
 }
 ```
-
 **Test Cases:**
 
 - `isAllowed("user")` -> Expected: `true`
