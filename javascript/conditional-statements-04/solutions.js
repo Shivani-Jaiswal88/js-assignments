@@ -344,21 +344,130 @@
 
 // Module 4: Mixed Logic & Intermediate Hurdlesconsole.log(checkShopStatus("sunday"));
 
-// **Scenario:** Ek couple panipuri khaa raha hai. Unka order array mein aaya hai. Humein check karna hai: Agar array mein 
-// "PaniPuri" hai, toh uske sath "SukhiPuri" bhi free add karni hai (agar pehle se nahi hai).
+//1  ANS
+// function completeOrder(orderItems) {
+//    if(orderItems.includes("panipuri") === true){
+//     orderItems.push("sukhipuri")
+//     return orderItems
+//    }else{
+//     return orderItems
+//    }
+// }
+// console.log(completeOrder(["panipuri","Dahipuri"]));
+// console.log(completeOrder(["Dahipuri"]));
+// console.log(completeOrder(["Dahipuri", "Dahipapadi"]));
 
-// **Requirements:** Use `if`. Array method `.includes()` use karein. Agar "PaniPuri" hai aur "SukhiPuri" nahi hai, toh 
-// array mein push karein. Updated array return karein.
+//2ANS
+// function checkItemPrice(item) {
+//   if(item.price === 0 ||  item.price === undefined){
+//         return "Price Not set"
+//   }else{
+//        return "Available"
+//   }
+// }
+
+// console.log(checkItemPrice({name : "dal"}));
+// console.log(checkItemPrice({name : "Rice", price: 50}));
+// console.log(checkItemPrice({name : "Rice", price: 0}));
 
 
-function completeOrder(orderItems) {
-  // TODO: Nested or compound condition using array.includes()
-  return orderItems.includes("panipuri") === true ? orderItems.push("sukhipuri") : orderItems
-//   orderItems.push("Sukhipuri")
-//   return orderItems;
+//3ANS
+// function autoAvailability(autoObj) {
+//   switch(autoObj.status){
+//     case "Booked":
+//         return "Busy";
+//         break;
+//         case "free":
+//         return "Baitho";
+//         break;
+//         case "lunch":
+//         return "khana kha rha hu";
+//         break;
+//   }
+// }
+// console.log(autoAvailability({status: "free"}));
+// console.log(autoAvailability({status: "lunch"}));
+
+//4ANS
+// function checkComboOffer(samosaQty, orderArray) {
+//   if(samosaQty >= 5 && orderArray.includes("jalebi") === true){
+//     return "Combo Discount";
+//   }else{
+//     return "No Discount"
+//   }
+// }
+// console.log(checkComboOffer(6,["samose","jalebi"]));
+// console.log(checkComboOffer(6, ["Samose", "Kachori"]));
+
+//5ANS
+// function serveGroup(peopleArray) {
+//   return peopleArray.length >= 5  ? "Ketli de do" : "Glass dena" ;
+// }
+// console.log(serveGroup(["A","B"]));
+// console.log(serveGroup(["A", "B", "C", "D", "E", "F"]));
+
+//6 ANS
+// function price(customer,originalPrice){
+//     if(customer.isLocal === true){
+//         return originalPrice - 10
+//     }else{
+//         return originalPrice
+//     }
+// }
+// console.log(price({isLocal : true},100));
+// console.log(price({isLocal : false},100));
+
+//7ANS
+// function makeKhataEntry(customerName) {
+//     return customerName === "" ? "naam btao" : "Entery Done"
+// }
+// console.log(makeKhataEntry(""));
+// console.log(makeKhataEntry("Mohit"));
+
+//8ANS
+// function getBiryaniBill(orderObj) {
+//     if (orderObj.type === "chicken") {
+//         switch (orderObj.portion) {
+//             case "full":
+//                 return 150;
+//                 break;
+//             case "half":
+//                 return 80;
+//                 break;
+//         }
+//     }else{
+//         return 0
+//     }
+// }
+// console.log(getBiryaniBill({ type: "chicken", portion: "full" }));
+// console.log(getBiryaniBill({ type: "veg", portion: "half" }));
+// console.log(getBiryaniBill({ type: "chicken", portion: "half" }));
+
+//10ANS
+// function checkWeekendOffer(day, amount) {
+//   if(day === "Saturday" || day === "Sunday" && amount >= 200){
+//    return "Free Cola"
+//   }else{
+//     return "No Offer"
+//   }
+// }
+// console.log(checkWeekendOffer("Saturday" , 250));
+// console.log(checkWeekendOffer("Monday", 300));
+// console.log(checkWeekendOffer("Sunday",150));
+
+
+
+// **Scenario:** Dosa order complete hone par bill receipt object banana hai. Agar order `isParcel` true hai toh packaging fee 10 Rs extra judti hai.
+
+// **Requirements:** Ek function banayein jo ek object return kare. Object ki `total` key par ternary operator lagayein (`basePrice` + 10 ya sirf `basePrice`).
+function generateDosaBill(basePrice, isParcel) {
+   {basePrice }
+  return isParcel === true ? billAmount.basePrice+10 :billAmount.basePrice
+//   return {
+//     billAmount: /* Ternary magic here */
+//   };
 }
-console.log(completeOrder(["panipuri","Dahipuri"]));
-console.log(completeOrder(["Dahipuri"]));
+console.log(generateDosaBill(50, true));
 
-// - `completeOrder(["PaniPuri", "DahiPuri"])` -> Expected: `["PaniPuri", "DahiPuri", "SukhiPuri"]`
-// - `completeOrder(["DahiPuri"])` -> Expected: `["DahiPuri"]`
+// - `generateDosaBill(50, true)` -> Expected: `{ billAmount: 60 }`
+// - `generateDosaBill(50, false)` -> Expected: `{ billAmount: 50 }`
