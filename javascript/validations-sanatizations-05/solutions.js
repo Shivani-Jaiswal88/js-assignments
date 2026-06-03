@@ -68,32 +68,42 @@
 // console.log(sanitizeUdhaarFlag("true"));
 // console.log(sanitizeUdhaarFlag(1));
 
-
-
-// **Scenario:** Ek discount logic mein kisi ne bill ko 0 se divide kar diya aur result `Infinity` ban gaya!
-
-// **Requirements:** Built-in `isFinite()` ka use karein. Agar value finite hai toh value return karein, warna `0` return karein.
-
-function sanitizeDiscountMath(result) {
-  // TODO: Check if result is finite
-  return result === Infinity ? 0 : result
-}
-console.log(sanitizeDiscountMath(50));
-console.log(sanitizeDiscountMath(100/0));
-
-console.log(sanitizeDiscountMath(Infinity));
-
-// - `sanitizeDiscountMath(50)` -> Expected: `50`
-// - `sanitizeDiscountMath(100 / 0)` -> Expected: `0`
-// - `sanitizeDiscountMath(Infinity)` -> Expected: `0`
-// console.log(100/0);
-
-
-
-
+//10 ANS
+// function sanitizeDiscountMath(result) {
+//   return result === Infinity ? 0 : result
+// }
+// console.log(sanitizeDiscountMath(50));
+// console.log(sanitizeDiscountMath(100/0));
+// console.log(sanitizeDiscountMath(Infinity));
 
 
 // Module 2: The Structure Check (Object Validations)
+
+//1 ANS
+// function isStrictObject(data) {
+//   return data !== null && typeof data === 'object' && !Array.isArray(data) ? true : false
+//   }
+// console.log(isStrictObject({name : "Raju"}));
+// console.log(isStrictObject(null));
+// console.log(isStrictObject([1,2,3]));
+
+//2 ANS
+// function hasPriceKey(itemObj) {
+//   return itemObj.price === undefined ? false : true
+// }
+// console.log(hasPriceKey({item : "Sugar", price: 40}));
+// console.log(hasPriceKey({item : "salt"}));
+// console.log(hasPriceKey({item :"Rice", price : undefined}));
+
+//3 ANS
+// function validateCartObject(cartObj) {
+//     let keys = Object.keys(cartObj)
+//     return keys.length === 0 ? "Cart Empty": "processing"
+// }
+// console.log(validateCartObject({}));
+// console.log(validateCartObject({milk : 2}));
+// console.log(validateCartObject({ bread: 1, butter: 1 }));
+
 
 
 // Module 3: Group Orders & Collection Checks (Array Validations)
