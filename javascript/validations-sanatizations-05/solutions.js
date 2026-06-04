@@ -104,6 +104,46 @@
 // console.log(validateCartObject({milk : 2}));
 // console.log(validateCartObject({ bread: 1, butter: 1 }));
 
+//4ANS
+// function sanitizeUserEmail(user) {
+//     user.email = user.email?.toLowerCase()
+//     return user.email === undefined ? "Should not crash if no email" :user 
+// }
+// console.log(sanitizeUserEmail({ email: "Aman@GMAIL.com" }));
+// console.log(sanitizeUserEmail({email: "test@test.com"}));
+// console.log(sanitizeUserEmail({name : "Raj"}));
+
+//5ANS
+// function getDeliveryCity(customer) {
+//   customer = customer.address?.city
+//   return customer === undefined ?"Pick up at store" : customer
+// }
+// console.log(getDeliveryCity({address: {city: "pune"}}));
+// console.log(getDeliveryCity({name : "Ravi"}));
+// console.log(getDeliveryCity({}));
+
+//6 ANS
+// function sanitizeInventory(inventory) {
+//     if(inventory && typeof inventory.stockQty === "string"){
+//         inventory.stockQty = Number(inventory?.stockQty)
+//     }
+//     return inventory    
+// }
+// console.log(sanitizeInventory({ stockQty: "50" }));
+// console.log(sanitizeInventory({stockQty : 20}));
+// console.log(sanitizeInventory({stockQty: 0}));
+
+// this my code 
+// function sanitizeInventory(inventory) {
+//     inventory = typeof inventory.stockQty === "string" ? Number(inventory?.stockQty) : inventory
+//     return inventory
+
+// }
+// console.log(sanitizeInventory({ stockQty: "50" }));
+// console.log(sanitizeInventory({stockQty : 20}));
+// console.log(sanitizeInventory({stockQty: 0}));
+
+
 
 
 // Module 3: Group Orders & Collection Checks (Array Validations)
