@@ -11,6 +11,8 @@
 // console.log(sanitizeCustomerName(null));
 // console.log(sanitizeCustomerName(""));
 
+
+
 //2ANS
 // function validateSamosaPrice(price) {
 // let a = Number.isNaN(price)
@@ -143,7 +145,45 @@
 // console.log(sanitizeInventory({stockQty : 20}));
 // console.log(sanitizeInventory({stockQty: 0}));
 
+//7 ANS
+// function applyDefaultSpice(order) {
+//     if(order.spiceLevel === undefined){
+//         order.spiceLevel = "Medium"
+//         return order
+//     }else{
+//         return order
+//     }
+// }
+// console.log(applyDefaultSpice({ item: "Masala" }));
+// console.log(applyDefaultSpice({ spiceLevel: "High" }));
+// console.log(applyDefaultSpice({}));
 
+//8 ANS
+// function cleanObject(billObj) {
+//     if(billObj.discount === undefined){
+//         delete billObj.discount
+//         return billObj
+//     }else{
+//     return billObj
+//     }
+// }
+// console.log(cleanObject({total : 100, discount : undefined}));
+// console.log(cleanObject({total : 100, discount : 10}));
+// console.log(cleanObject({total: 50}));
+
+
+//9ANS
+// function preventRoleHack(userPayload) {
+//   if(userPayload.role === userPayload.role){
+//     delete userPayload.role
+//     return userPayload
+//   }else{
+//     return userPayload
+//   }
+// }
+// console.log(preventRoleHack({name:"Aman",role:"Admin"}));
+// console.log(preventRoleHack({name : "Ravi"}));
+// console.log(preventRoleHack({role:"user"}));
 
 
 // Module 3: Group Orders & Collection Checks (Array Validations)
