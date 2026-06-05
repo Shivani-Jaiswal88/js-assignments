@@ -188,6 +188,42 @@
 
 // Module 3: Group Orders & Collection Checks (Array Validations)
 
+//1 ANS
+// function ensureArray(data) {
+//   return Array.isArray(data) === true ? data :  []
+// }
+// console.log(ensureArray(["Samose", "Kachori"]));
+// console.log(ensureArray("Samose", "Kachori"));
+// console.log(ensureArray(null));
+
+//2 ANS
+// function checkConsumption(platesArray) {
+//   return platesArray.length === 0 ? "No item eaten" : "Generate Bill"
+// }
+// console.log(checkConsumption([]));
+// console.log(checkConsumption(["puri1"]));
+// console.log(checkConsumption(["puri1","puri2"]));
+
+
+
+//3 ANS trim nii hua 
+// function enforceCouponLimit(items) {
+//   return items.length > 3? items.slice(0,3) : items
+  
+// }
+// console.log(enforceCouponLimit(["chai","coffee","Biscuit","Rusk"]));
+// console.log(enforceCouponLimit(["chai","Coffee"]));
+// console.log(enforceCouponLimit([1,2,3,4,5]));
+
+//4ANS
+// function getFirstInQueue(queue) {
+//   return queue.length > 0 ? queue[0] : "Queue khali hai"
+// }
+// console.log(getFirstInQueue(["Ravi","Aman"]));
+// console.log(getFirstInQueue([]));
+// console.log(getFirstInQueue(["Neha"]));
+
+
 
 // Module 4: Production Mixed Scenarios (Combining Concepts)
 
