@@ -224,6 +224,82 @@
 // console.log(getFirstInQueue(["Neha"]));
 
 
+//5ANS 
+// function validateOrder(item) {
+// for(let i = 0; i<menu.length; i++){
+//   menu[i]
+// }
+//  if(menu?.includes("Butter") === true || item?.includes("Butter") === true){
+//   return "Not a menu"
+//  }else{
+//   return "preparing"  
+//  }
+// }
+// console.log(validateOrder("Classic"));
+// console.log(validateOrder("Butter"));
+// console.log(validateOrder("cheese"));
+
+
+//6ANS
+// function sanitizeAddons(orderObj) {
+//   if(orderObj.addons === undefined || orderObj.addons === null || orderObj.addons === false){
+//     orderObj.addons = []
+//     return orderObj
+//   }else{
+//   [orderObj.addons]
+//   return orderObj
+//   }
+// }
+// console.log(sanitizeAddons({item : "Pizza"}));
+// console.log(sanitizeAddons({item : "Burger", addons: ["cheese"]}));
+// console.log(sanitizeAddons({addons: null}));
+
+//7ANS
+// function isFirstItemNumber(priceList) {
+// return typeof priceList[0] === 'number' ? true : false
+
+// }
+
+// console.log(isFirstItemNumber([100,200]));
+// console.log(isFirstItemNumber(["100",200]));
+// console.log(isFirstItemNumber([]));
+
+
+//8ANS
+// function removeSpam(chatArray) {
+//   if(chatArray[0] === "SPAM"){
+//     chatArray.shift()
+//     return chatArray
+//   }else{
+//     return chatArray
+//   }
+// }
+// console.log(removeSpam(["SPAM","Hello","Hi"]))
+// console.log(removeSpam(removeSpam(["Good", "Morning"])));
+// console.log(removeSpam(["SPAM"]));
+
+//9ANS
+// function safeMerge(bill1, bill2) {
+//   if(Array.isArray(bill2) === true){
+//     return bill1.concat(bill2)
+//   }else{
+//     return bill1
+//   }
+
+// }
+// console.log(safeMerge([10,20],[30]));
+// console.log(safeMerge([10],null));
+// console.log(safeMerge([5]));
+
+
+//10ANS
+// function findRice(inventory) {
+//   return inventory = inventory.indexOf("Rice") === -1 ? `Not Found` : `Found at ${inventory.indexOf("Rice")}`
+// }
+// console.log(findRice(["Dal","Rice","Aata"]));
+// console.log(findRice(["Sugar","salt"]));
+// console.log(findRice(["Rice"]));
+// console.log(findRice(["Dal","Aata","Rice"]));
 
 // Module 4: Production Mixed Scenarios (Combining Concepts)
 
