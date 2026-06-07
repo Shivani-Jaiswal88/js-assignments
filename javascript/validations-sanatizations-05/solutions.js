@@ -209,7 +209,7 @@
 //3 ANS trim nii hua 
 // function enforceCouponLimit(items) {
 //   return items.length > 3? items.slice(0,3) : items
-  
+
 // }
 // console.log(enforceCouponLimit(["chai","coffee","Biscuit","Rusk"]));
 // console.log(enforceCouponLimit(["chai","Coffee"]));
@@ -302,5 +302,118 @@
 // console.log(findRice(["Dal","Aata","Rice"]));
 
 // Module 4: Production Mixed Scenarios (Combining Concepts)
+
+//1 ANS
+// function validateRegistration(user) {
+//   if(!user.name || user.name.trim() === ""){
+//     return "Name required"
+//   }else if(user.age<= 18){
+//     return "Underage"
+//   }else{
+//     return "Valid"
+//   }
+// }
+// console.log(validateRegistration({ name: "Raj", age: 20 }));
+// console.log(validateRegistration({ name: "", age: 25 }));
+// console.log(validateRegistration({name:"Raj",age:16}));
+
+//2ANS
+// function sanitizeCurrency(amount) {
+//     return typeof amount === "string" ? "0.00": amount.toFixed(2)
+// }
+// console.log(sanitizeCurrency(25.678));
+// console.log(sanitizeCurrency("500"));
+// console.log(sanitizeCurrency(10));
+//3ANS
+// function sanitizeAddress(addressObj) {
+//   let a = Number(addressObj.pincode)
+//   if (addressObj.street === undefined) {
+//     addressObj.street = "N/A"
+//     addressObj.pincode = a
+//     return addressObj
+//   } else {
+//     addressObj.pincode = a
+//     return addressObj
+//   }
+
+// }
+// console.log(sanitizeAddress({ city: "Mumbai", pincode: "400001" }));
+// console.log(sanitizeAddress({ street: "MG Road", pincode: 110001 }));
+// console.log(sanitizeAddress({ pincode: "123" }));
+
+//4ANS
+// function cleanSearchQuery(query) {
+//   if(query.trim()?.toLowerCase() === ""){
+//     query = null
+//     return query
+//   }else{
+//     return query?.trim()?.toLowerCase()
+//   }
+  
+// }
+// console.log(cleanSearchQuery("   paneer Tikka   "));
+// console.log(cleanSearchQuery("   "));
+// console.log(cleanSearchQuery("samosa"));
+
+
+//5ANS
+// const allowedRoles = ["Admin", "Manager"];
+// function checkAccess(userObj) {
+//   return allowedRoles.includes(userObj.role) === true ? true : false
+// }
+// console.log(checkAccess({ role: "Admin" }));
+// console.log(checkAccess({ role: "User" }));
+// console.log(checkAccess({}));
+
+//6ANS
+// function isIndianNumber(phoneStr) {
+//   if(isNaN(phoneStr)){
+//     return false
+//   }else if(phoneStr.trim()?.length == 10){
+//     return true
+//   }
+// }
+// console.log(isIndianNumber("9876543210"));
+// console.log(isIndianNumber("  9876543210  "));
+// console.log(isIndianNumber("98765ABCDE"));
+
+
+//7ANS
+// function validateDeliveryDate(dateStr) {
+//   return new Date(dateStr).getTime()  ? "Valid Date" : "Invalid Date"
+// }
+// console.log(validateDeliveryDate("2026-05-21"));
+// console.log(validateDeliveryDate("Hello World"));
+// console.log(validateDeliveryDate("2026/12/31"));
+
+//8ANS
+// function collectErrors(user) {
+//   let error = []
+//  if(user.name === undefined && user.email === undefined){
+//     error.push("name Missing"),error.push("email Missing")
+//     return error
+//  }else if(user.name === undefined){
+//     error.push("name Missing")
+//     return error
+//   }else if(user.email === undefined){
+//     error.push("email Missing")
+//     return error
+//   }else{
+//     return error
+//   }
+// }
+// console.log(collectErrors({name: "Aman" , email: "a@a.com"}));
+// console.log(collectErrors({name: "Aman"}));
+// console.log(collectErrors({}));
+
+//9ANS
+// function getDiscountRate(isVIP, isNewUser) {
+//   return isVIP === true ? 20 :(isNewUser === true )? 10: 0
+// }
+// console.log(getDiscountRate(true,false));
+// console.log(getDiscountRate(false,true));
+// console.log(getDiscountRate(false,false));
+
+
 
 
