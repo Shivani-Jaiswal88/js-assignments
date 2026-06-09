@@ -36,26 +36,48 @@
 // console.log(getMedicineDays(8));
 // console.log(getMedicineDays(1));
 
-// for loop se array traverse karein. Ek maxSpeed variable maintain karein aur usko update karte rahein.
+//4ANS
+// function getTopSpeed(speedRecords) {
+//     let maxSpeed = 0
+//  for(let i = 0; i<speedRecords.length; i++){
+//   maxSpeed = Math.max(...speedRecords)
+//  }
+//    return maxSpeed
+//  }
 
-function getTopSpeed(speedRecords) {
-  // TODO: Find and return the maximum number in the array
-//   return speedRecords.length
-//   let maximum 
- for(let i = 0; i<speedRecords.length; i++){
-  speedRecords = Math.min(speedRecords)
- }
-   return speedRecords
- }
+// console.log(getTopSpeed([80,120,160,90]));
+// console.log(getTopSpeed([50,50,50]));
+// console.log(getTopSpeed([]));
 
-console.log(getTopSpeed([80,120,160,90]));
-console.log(getTopSpeed([50,50,50]));
-console.log(getTopSpeed([]));
 
-// - getTopSpeed([80, 120, 160, 90]) -> Expected: 160
-// - getTopSpeed([50, 50, 50]) -> Expected: 50
-// - getTopSpeed([]) -> Expected: 0 (Handle empty array)
+//6ANS
+// function countParleG(inventory) {
+//   let total = 0
+//   for(let i = 0; i<inventory.length; i++){
+//     if(inventory[i] === "Parle-G"){
+//       total++
+//     }
+//   }
+//   return total
+// }
+// console.log(countParleG(["Oreo", "Parle-G", "Monaco", "Parle-G"]));
+// console.log(countParleG(["GoodDay","Oreo"]));
+// console.log(countParleG(["parle-g"]));
 
+
+//7ANS
+// function getEligibleViewers(ages) {
+//   let update = []
+//   for(let i = 0; i<ages.length; i++){
+//     if(ages[i] >= 18){
+//     update.push(ages[i])
+//     }
+//   }
+//   return update
+// }
+// console.log(getEligibleViewers([12,18,25,16]));
+// console.log(getEligibleViewers([10,15]));
+// console.log(getEligibleViewers([20,30]));
 
 
 
