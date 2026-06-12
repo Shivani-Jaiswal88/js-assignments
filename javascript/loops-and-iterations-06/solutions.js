@@ -79,10 +79,83 @@
 // console.log(getEligibleViewers([10,15]));
 // console.log(getEligibleViewers([20,30]));
 
-
+//10ANS
+// function getFirstEven(numbers) {
+//   let a = 0
+//   for(let i = 0; i<numbers.length; i++){
+//     if(numbers[i] % 2 ==0){
+//         return a = numbers[i]
+//     }
+//   }  
+//   return -1
+// }
+// console.log(getFirstEven([1,3,4,7,8]));
+// console.log(getFirstEven([1, 3, 5]));
+// console.log(getFirstEven([2, 4, 6]));
 
 // Module 2: The Conditionals (while & do...while)
+//2ANS
+// function checkATM(pinsEntered) {
+//   const correctPin = "1234";
+//   let i = 0;
+//   while(i<pinsEntered.length){
+//     if(correctPin === pinsEntered[i]){
+//         return "Success"
+//     }
+//      i++
+//   }
+//   return "Blocked"
+// }
+// console.log(checkATM(["1111", "2222", "1234", "9999"]));
+// console.log(checkATM(["1111", "2222", "3333"]));
+// console.log(checkATM(["1234"]));
 
+//3ANS
+// function makeLaddoos(demand) {
+//     let i = 0;
+//     do{
+//         i++
+//     }while(i<demand)
+//         return i
+// }
+// console.log(makeLaddoos(3));
+// console.log(makeLaddoos(0));
+// console.log(makeLaddoos(-5));
+
+//4ANS
+// function monthsToClearLoan(balance, emiAmount) {
+//   let month = 0
+// while (balance>0){
+//     balance-=emiAmount
+//     month ++
+// }
+//   return month
+// }
+// console.log(monthsToClearLoan(10000,2000));
+// console.log(monthsToClearLoan(5000,1500));
+// console.log(monthsToClearLoan(0,1000));
+
+
+//5ANS
+// function launchCountdown(timer) {
+//   let up = []
+//   while (timer>0){
+//     up.push(timer)
+//     timer--
+//   }
+//   up.push("liftoff!")
+//    return up
+// }
+// console.log(launchCountdown(3));
+// console.log(launchCountdown(1));
+// console.log(launchCountdown(0));
+
+
+
+
+// - searchTrunk(["Suit", "Lal Saree", "Jeans"]) -> Expected: ["Suit", "Lal Saree"]
+// - searchTrunk(["Shirt", "Pant"]) -> Expected: [] (If not found, trunk becomes empty)
+// - searchTrunk(["Lal Saree", "Shirt"]) -> Expected: ["Lal Saree"]
 
 // Module 3: Control Flow (break & continue)
 
