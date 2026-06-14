@@ -149,13 +149,22 @@
 // console.log(launchCountdown(3));
 // console.log(launchCountdown(1));
 // console.log(launchCountdown(0));
+ 
+
+//8ANS
+// function getTensCoins(amount) {
+//   let count = 0
+//   while(amount>=10){
+//     count++
+//     amount-=10
+//   }
+//   return count
+// }
+// console.log(getTensCoins(45));
+// console.log(getTensCoins(9));
+// console.log(getTensCoins(100));
 
 
-
-
-// - searchTrunk(["Suit", "Lal Saree", "Jeans"]) -> Expected: ["Suit", "Lal Saree"]
-// - searchTrunk(["Shirt", "Pant"]) -> Expected: [] (If not found, trunk becomes empty)
-// - searchTrunk(["Lal Saree", "Shirt"]) -> Expected: ["Lal Saree"]
 
 // Module 3: Control Flow (break & continue)
 
