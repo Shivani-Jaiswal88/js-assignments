@@ -168,6 +168,69 @@
 
 // Module 3: Control Flow (break & continue)
 
+//1ANS
+// function getNormalQueue(queue) {
+//   let enteries = [];
+//   for (let i = 0; i< queue.length; i++) {
+//     if (queue[i] === "VIP") {
+//         continue
+//     }
+//     enteries.push(queue[i])
+//   }
+//   return enteries
+// }
+// console.log(getNormalQueue(["Normal", "VIP", "Normal"]));
+// console.log(getNormalQueue(["VIP", "VIP"]));
+// console.log(getNormalQueue(["Normal"]));
+
+//2ANS
+// function countSignalsCrossed(signals) {
+//   let count = 0;
+//   for(let i = 0; i<signals.length; i++){
+//     if(signals[i] === "Red"){
+//         break
+//     }
+//     count++
+//   }
+//   return count
+// }
+// console.log(countSignalsCrossed(["Green", "Yellow", "Red","Green"]));
+// console.log(countSignalsCrossed(["Red","Green"]));
+// console.log(countSignalsCrossed(["Green"]));
+
+
+//4ANS
+// function getVegPlate(buffetItems) {
+//   let update = []
+//   for(let i = 0; i<buffetItems.length; i++){
+//     if(buffetItems[i] === "Non-Veg"){
+//         continue
+//     }
+//     update.push(buffetItems[i])
+//   }
+//   return update
+// }
+// console.log(getVegPlate(["Paneer","Non-Veg", "Dal"]));
+// console.log(getVegPlate(["Non-Veg"]));
+// console.log(getVegPlate(["Roti","Rice"]));
+
+//6ANS
+// function billValidItems(prices) {
+//   let sum = 0;
+//   for(let i = 0; i<prices.length; i++){
+//     if(prices[i] === "OOS"){
+//         continue
+//     }
+//     sum += prices[i]
+//   }
+//   return sum
+// }
+// console.log(billValidItems([100,"OOS",50]));
+// console.log(billValidItems(["OOS","OOS"]));
+// console.log(billValidItems([10,20]));
+
+
+
 
 // Module 4: Iterating Objects (for...in Loop)
 
