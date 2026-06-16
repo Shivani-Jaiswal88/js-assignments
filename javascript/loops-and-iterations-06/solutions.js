@@ -230,6 +230,24 @@
 // console.log(billValidItems([10,20]));
 
 
+//7ANS
+// function countTollCrossings(queue) {
+//   let sum = 0
+//   for(let i = 0; i<queue.length; i++){
+//     if(queue[i]=== "Invalid"){
+//         continue
+//     }else if(queue[i] === "Police"){
+//         break
+//     }
+//     sum += 1
+//   }
+//   return sum
+// }
+// console.log(countTollCrossings(["Valid", "Invalid","Valid"]));
+// console.log(countTollCrossings(["Valid","Police","Valid"]));
+// console.log((countTollCrossings(["Invalid", "Police"])));
+
+
 
 
 // Module 4: Iterating Objects (for...in Loop)
