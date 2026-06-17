@@ -248,7 +248,23 @@
 // console.log((countTollCrossings(["Invalid", "Police"])));
 
 
-
+//9ANS
+// function removeVowels(message) {
+//   let element 
+//   let finalOutput = "" 
+//    for (let index = 0; index <message.length; index++) {
+//     if(message[index] === "a" || message[index] === "e" || message[index] === "i" || message[index] === "o" || message[index] === "u"){
+//       continue
+//     }
+//   element = message[index];
+//   finalOutput += element;
+   
+// }
+// return finalOutput
+// }
+// console.log(removeVowels("Hello"));
+// console.log(removeVowels("Javascript"));
+// console.log(removeVowels("Apple"));
 
 // Module 4: Iterating Objects (for...in Loop)
 
