@@ -149,7 +149,7 @@
 // console.log(launchCountdown(3));
 // console.log(launchCountdown(1));
 // console.log(launchCountdown(0));
- 
+
 
 //8ANS
 // function getTensCoins(amount) {
@@ -258,7 +258,7 @@
 //     }
 //   element = message[index];
 //   finalOutput += element;
-   
+
 // }
 // return finalOutput
 // }
@@ -267,6 +267,87 @@
 // console.log(removeVowels("Apple"));
 
 // Module 4: Iterating Objects (for...in Loop)
+
+//1ANS
+// function getTotalMarks(reportCard) {
+//   let marks = 0
+//   for(let key in reportCard){
+//     marks += reportCard[key]
+//   }
+//   return marks
+// }
+// console.log(getTotalMarks({ math: 80, science: 90 }) );
+// console.log(getTotalMarks({ hindi: 50 }));
+// console.log(getTotalMarks({}));
+
+
+//2ANS
+// function countSpecs(laptopObj) {
+//   let count = 0
+//   let keys = Object.keys(laptopObj)
+//   for(let x in keys){
+//     count = x
+//     count++
+//   }
+//   return count
+// }
+// console.log(countSpecs({ ram: "16GB", cpu: "i7", os: "Windows" }) );
+// console.log(countSpecs({ brand: "Apple" }));
+// console.log(countSpecs({}));
+
+
+//3ANS
+// function applyDiwaliDiscount(cartObj) {
+//   for(let key in cartObj){
+//     if(cartObj[key] >= 50){
+//     cartObj[key] = cartObj[key] - 50
+//     } 
+//   }
+//   return cartObj
+// }
+// console.log(applyDiwaliDiscount({ shirt: 500, pant: 800 }) );
+// console.log(applyDiwaliDiscount({ cap: 100 }));
+// console.log(applyDiwaliDiscount({}));
+
+//4ANS
+// function checkPassFail(marksObj) {
+//   for(let key in marksObj){
+//     if(marksObj[key]<33){
+//         return "Fail"
+//     }
+//   }
+//   return "Pass"
+// }
+// console.log(checkPassFail({math : 40, science: 30}));
+// console.log(checkPassFail({math: 80, english: 70}));
+// console.log(checkPassFail({}));
+
+
+//5ANS
+// function getMaxPrice(pricesObj) {
+//   let max = 0
+//   for(let key in pricesObj){
+//     if(max<pricesObj[key])
+//         max = pricesObj[key]
+//   }
+//   return max
+// }
+// console.log(getMaxPrice({Tv:20000, Fridge:15000, Ac:25000}));
+// console.log(getMaxPrice({bulb : 100}));
+// console.log(getMaxPrice({}));
+
+
+//7ANS
+// function getCustomKeys(obj) {
+//     let ar = []
+//     for (let key in obj) {
+//         ar.push(key)
+//     }
+//     return ar
+// }
+// console.log(getCustomKeys({ a: 1, b: 2 }));
+// console.log(getCustomKeys({name: "Raj"}));
+// console.log(getCustomKeys({}));
 
 
 // Module 5: Iterating Collections (for...of Loop)
