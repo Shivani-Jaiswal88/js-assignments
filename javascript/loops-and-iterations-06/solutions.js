@@ -350,4 +350,19 @@
 // console.log(getCustomKeys({}));
 
 
+//8ANS
+// function extractStrings(mixedObj) {
+//   let obj = {}
+//   for(let str in mixedObj){
+//     if(typeof mixedObj[str] === 'string'){
+//         obj[str] = mixedObj[str]
+//     }
+//   }
+//   return obj
+// }
+// console.log(extractStrings({ age: 25, name: "Aman", isActive: true }));
+// console.log(extractStrings({ city: "Delhi", pin: 110001 }));
+// console.log( extractStrings({ count: 10 }) );
+
+
 // Module 5: Iterating Collections (for...of Loop)
