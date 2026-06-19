@@ -364,5 +364,20 @@
 // console.log(extractStrings({ city: "Delhi", pin: 110001 }));
 // console.log( extractStrings({ count: 10 }) );
 
+//10ANS
+// function verifyKYC(formObj) {
+//     for (let key in formObj) {
+//         if (formObj[key] === "" || formObj[key] === null) {
+//             return "Incomplete"
+//         }
+//     }
+//     return "Complete"
+// }
+// console.log(verifyKYC({ pan: "ABC", aadhar: "" }));
+// console.log(verifyKYC({ pan: "ABC", aadhar: "123" }));
+// console.log(verifyKYC({ name: null }));
 
-// Module 5: Iterating Collections (for...of Loop)
+
+
+
+// // Module 5: Iterating Collections (for...of Loop)
