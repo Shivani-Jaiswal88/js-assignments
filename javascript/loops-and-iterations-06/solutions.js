@@ -377,7 +377,108 @@
 // console.log(verifyKYC({ pan: "ABC", aadhar: "123" }));
 // console.log(verifyKYC({ name: null }));
 
-
-
-
 // // Module 5: Iterating Collections (for...of Loop)
+ 
+//1ANS
+// function countWallet(notesArray) {
+//     let sum  = 0
+//     for(let value of notesArray){
+//         sum+= value
+//     }
+//     return sum
+// }
+// console.log(countWallet([500,100,50]));
+// console.log(countWallet([20]));
+// console.log(countWallet([]));
+
+
+//2ANS
+// function countVowels(word) {
+//   let count = 0
+//   for(let value of word){
+//     if(value === "a" || value === "e" || value === "i" || value === "o" || value === "u"){
+//     count++
+//     } 
+// }
+// return count
+// }
+// console.log(countVowels("education"));
+// console.log(countVowels("xyz"));
+// console.log(countVowels("apple"));
+
+//3ANS
+// function filterComments(commentsList) {
+//     let updatearray = []
+//     for(let value of commentsList){
+//         if(value === "spam"){
+//             continue
+//         }
+//         updatearray.push(value)
+//     }
+//     return updatearray
+// }
+// console.log(filterComments(["nice","spam","goog","video"]));
+// console.log(filterComments(["spam","spam"]));
+// console.log(filterComments(["hello"]));
+
+
+//4ANS
+// function getLongestWord(wordsArray) {
+//   let count = 0
+//   let longword = `" "`
+//   for(let value of wordsArray){
+//     if(count < value.length){
+//         count = value.length
+//         longword = value
+//     }
+//   }
+//   return longword
+// }
+// console.log(getLongestWord(["Apple", "Watermelon", "Kiwi"]) );
+// console.log( getLongestWord(["A", "BC", "D"]));
+// console.log(getLongestWord([]));
+
+
+//5ANS
+// function addRespect(namesList) {
+//   let updatearray = []
+//   for(let value of namesList){
+//     updatearray.push(value.concat(" ","ji"))
+//   }
+//   return updatearray
+// }
+// console.log(addRespect(["Rahul","Neha"]));
+// console.log(addRespect(["papa"]));
+// console.log(addRespect([]));
+
+
+//6ANS
+// function checkWatchTime(videoLengths) {
+//   let minutes = 0
+//   for(let value of videoLengths){
+//     minutes += value
+//     if(minutes > 60){
+//         return "Too Long"
+//     }
+//   }
+//   return minutes
+// }
+// console.log(checkWatchTime([20,20,15]));
+// console.log(checkWatchTime([30,40]));
+// console.log(checkWatchTime([10]));
+
+
+//8ANS
+// function countEight(passwordStr) {
+//     let count = 0
+//     for(let value of passwordStr){
+//         if(value === "8"){
+//             count++
+//         }
+//     }
+//     return count
+// }
+// console.log(countEight("88AABB8"));
+// console.log(countEight("1234567"));
+// console.log(countEight("8"));
+
