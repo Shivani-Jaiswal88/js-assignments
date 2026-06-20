@@ -482,3 +482,16 @@
 // console.log(countEight("1234567"));
 // console.log(countEight("8"));
 
+
+//10ANS
+// function buildSentence(wordsList) {
+//   let word = ""; 
+  
+//   for(let value of wordsList){
+//     word = word.concat(value, " "); 
+//   }
+//   return word
+// }
+// console.log(buildSentence(["Kaam", "Karo","bhai"])); 
+// console.log(buildSentence(["Hii"]));                
+// console.log(buildSentence([]));                      
