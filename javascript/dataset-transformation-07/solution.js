@@ -1,5 +1,65 @@
 // Module 1: Data Cleaning & Sanitization (Manual Filtering)
 
+//1ANS
+// function cleanPrices(prices) {
+//     let validprice = []
+//     for(let value of prices){
+//         if(value === null || value === undefined){
+//             continue
+//         }
+//         validprice.push(value)
+//     }
+//     return validprice
+// }
+// console.log(cleanPrices([10,null,20,undefined,30]));
+// console.log(cleanPrices([null,undefined]));
+// console.log(cleanPrices([50,60]));
+
+
+//2ANS
+// function getAvailableItems(menu) {
+//   let update = []
+//     for(let value of menu){
+//         if(value.inStock === false){
+//             continue
+//         }
+//         update = [value]
+//     }
+//     return update
+// }
+// console.log(getAvailableItems([{name: "Dosa", inStock: true}, {name: "Idli", inStock: false}]));
+// console.log(getAvailableItems([{name: "Tea", inStock: false}]));
+// console.log(getAvailableItems([{name: "Coffee", inStock: true}]));
+
+//3ANS
+// function cleanPhoneNumbers(phones) {
+//   let clean = []
+//   let text 
+//   for(let value of phones){
+//     text = value.replace("+91","")
+//     clean.push(text.trim())
+//   }
+//   return clean
+// }
+// console.log(cleanPhoneNumbers(["+91 9876543210", "9998887776"]));
+// console.log(cleanPhoneNumbers([" +919999999999 "]));
+// console.log(cleanPhoneNumbers([]));
+
+//4ANS
+// function filterActiveUsers(usersObj) {
+//     let update = {}
+//     for(let key in usersObj){
+//         if(usersObj[key].isActive === false){
+//             continue
+//         }
+//         update[key] = usersObj[key]
+//     }
+//     return update
+// }
+// console.log(filterActiveUsers({u1: {name: "Raj", isActive: true}, u2: {name: "Aman", isActive: false} }));
+// console.log(filterActiveUsers({u1:{name: "A", isActive: false}}));
+// console.log(filterActiveUsers({u1: {name: "B", isActive: true}}));
+
 
 // Module 2: Data Extraction & Shaping (Manual Mapping)
 
