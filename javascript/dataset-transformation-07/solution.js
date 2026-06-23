@@ -61,6 +61,36 @@
 // console.log(filterActiveUsers({u1: {name: "B", isActive: true}}));
 
 
+//6ANS
+// function filterAdults(ages) {
+//     let Adult_age = []
+//     for(let value of ages){
+//         if(value>= 18){
+//             Adult_age.push(value)
+//         }
+//     }
+//     return Adult_age
+// }
+// console.log(filterAdults([12,18,25,16]));
+// console.log(filterAdults([10,15]));
+// console.log(filterAdults([20]));
+
+//7ANS
+// function removeDuplicates(ids) {
+//     let ID = []
+//     for(let value of ids){
+//         if(ID.includes(value) === false){
+//             ID.push(value)
+//         }
+//     }
+//     return ID
+// }
+// console.log(removeDuplicates([101,102,101,103]));
+// console.log(removeDuplicates([1,1,1]));
+// console.log(removeDuplicates([]));
+
+ 
+
 // Module 2: Data Extraction & Shaping (Manual Mapping)
 
 
