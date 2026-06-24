@@ -89,9 +89,37 @@
 // console.log(removeDuplicates([1,1,1]));
 // console.log(removeDuplicates([]));
 
- 
+//8ANS
+// function validateMenu(items) {
+//   let update = []
+//     for(let value of items){
+//         if(value.price === undefined){
+//             continue
+           
+//         }
+//         update = [value]
+//     }
+//     return update
+// }
+// console.log(validateMenu([{name: "Tea", price: 10}, {name: "Coffee"}]));
+// console.log(validateMenu([{name: "Water", price: 0}]));
+// console.log(validateMenu([{name: "Milk"}]));
+
+//10ANS
+// function cleanProfile(profileObj) {
+//     for(let key in profileObj){
+//         if(profileObj[key] === "" || profileObj[key] === undefined ||profileObj[key] === null){
+//             delete profileObj[key]
+//         }
+//     }
+//     return profileObj
+// }
+// console.log(cleanProfile({name: "Raj", age: null, city: "" }));
+// console.log(cleanProfile({ phone: "123", isActive: false }));
+// console.log(cleanProfile({ bio: undefined }));
 
 // Module 2: Data Extraction & Shaping (Manual Mapping)
+
 
 
 // Module 3: Aggregations & Calculations (Manual Reduce)
