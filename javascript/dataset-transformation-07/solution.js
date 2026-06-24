@@ -120,6 +120,29 @@
 
 // Module 2: Data Extraction & Shaping (Manual Mapping)
 
+//1ANS
+// function extractNames(users) {
+//   let menu = []
+//   for(let value of users){
+//     menu.push(value.name)
+//   }
+//   return menu
+// }
+// console.log(extractNames([{id: 1, name: "Raj"}, {id: 2, name: "Neha"}]));
+// console.log(extractNames([{name: "Aman"}]));
+// console.log(extractNames([]));
+
+//2ANS
+// function addSalePrice(products) {
+//   for(let value of products){
+//    value.salePrice = value.price - (value.price*10)/100 
+//   }
+//   return products
+// }
+// console.log(addSalePrice([{name: "Shirt", price: 100}]));
+// console.log(addSalePrice([{name: "Bag", price: 50}]));
+// console.log(addSalePrice([]));
+
 
 
 // Module 3: Aggregations & Calculations (Manual Reduce)
