@@ -46,14 +46,19 @@
 // console.log(email("SHIVANI@GMAIL.COM"));
 // console.log(email("HELlo@GMAIL.COM"));
 
-//7 not solve
 
-// function getquote(text){
-//     return text.replaceAll('"', '\''); 
+//7ANS
+// function getQuote() {
+//   return `'Einstein said, "Imagination is everything."`
 // }
-// console.log(getquote(`Einstein said, "Imagination is everything"`));
-// `'Einstein said, "Imagination is everything."'`
+// console.log(getQuote());
 
+//8ANS
+// function isString(input) {
+//   return typeof input === "string"? true : false
+// }
+// console.log(isString("Hello"));
+// console.log(isString(123));
 
 // Module 2: Crunching "Numbers"
 
@@ -72,6 +77,13 @@
 // console.log(iseven(4));
 // console.log(iseven(7));
 
+//3ANS
+// function convertToNumber(strNum) {
+//   return Number(strNum) 
+// }
+// console.log(convertToNumber("45"));
+
+
 //4 ANS
 
 // function invoice(num){
@@ -80,17 +92,10 @@
 // console.log(invoice(101));
 
 //5ANS 
-// nii solve hua 
-// function cal(a,b){
-//     if(a * b ===  NaN) {
-//       return "true"
-//     }else{
-//        return "false" 
-//     }
-//     // return 
+// function convertToString(num) {
+//   return String(num)
 // }
-// console.log(cal("abc" , 5));
-// console.log(cal(5 , 5));
+// console.log(convertToString(101));
 
 //6 ANS
 
@@ -100,6 +105,13 @@
 // console.log(calculateSquareArea(4));
 // console.log(calculateSquareArea(5));
 
+
+//7ANS
+// function roundOffBill(amount) {
+//   return Math.round(amount)
+// }
+// console.log(roundOffBill(99.4));
+// console.log(roundOffBill(99.6));
 
 // 8 ANS
 // function isStrictlyNumber(Val) {
@@ -217,6 +229,14 @@
 //     return userLocation
 // }
 // console.log(isEmptyValue())
+
+//2ANS
+// function clearSession() {
+//   let session = "Active";
+//   session = null
+//   return session;
+// }
+// console.log(clearSession());
 
 //3 ANS
 // function checkDefaulValue(a){
