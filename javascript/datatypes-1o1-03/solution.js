@@ -20,6 +20,12 @@
 // console.log(isguestvipname(["Rahul","Pari","kunal"]));
 // (["Virat", "Rohit", "Bumrah"])
 
+//3ANS
+// function updatePlayer(team) {
+//   team[1] = "Surya"
+//   return team
+// }
+// console.log(updatePlayer(["Virat", "Rohit", "Bumrah"]));
 
 //4 ANS
 // function countItem(){
@@ -107,6 +113,13 @@
 // }
 // console.log(getDynamicValue({ car: "Honda", color: "Red" }, "color"));// Red
 // console.log(getDynamicValue({ car: "Honda", color: "Red" }, "car","color"));// output ye aa rha hai Honda but mujhe output aisa hona chahiye tha Honda Red
+
+//4ANS
+// function makeVIP(playerProfile) {
+//   playerProfile.isVip = true
+//   return playerProfile
+// }
+// console.log(makeVIP({ username: "Gamer1" }));
 
 //5 ANS
 // function Updatescore(player,newSore){ // player pra ka work kr rha hai 
@@ -196,6 +209,27 @@
 // console.log(getCheapestPrice(120,99,100));
 
 
+//6ANS
+// function generateRandomMultiplier() {
+//   return Math.floor(Math.random()*10)
+// }
+// console.log(generateRandomMultiplier());
+
+//7ANS
+// function getCurrentDateObject() {
+//   return new Date()
+// }
+// console.log(typeof getCurrentDateObject());
+
+//10ANS
+function checkMathDateTypes() {
+  let dateObj = new Date();
+  let dateobj = new Date();
+  return [typeof Math,typeof dateObj]
+  // TODO: Return [typeof Math, typeof dateObj]
+}
+console.log(checkMathDateTypes());
+
 // Module 4: String, Number, Boolean Methods & `typeof` Mixed
 
 // 1ANS
@@ -262,14 +296,11 @@
 // console.log(checkBoolType(true));
 // console.log(checkBoolType("Hello"));
 
-function identifyData(anyData) {
-  return typeof anyData
-}
+//10 ANS
+// function identifyData(anyData) {
+//   return typeof anyData
+// }
 
-console.log(identifyData(100));
-console.log(identifyData({ a: 1 }));
-console.log(identifyData([1,2]));
-
-// - `identifyData(100)` -> Expected: `"number"`
-// - `identifyData({ a: 1 })` -> Expected: `"object"`
-// - `identifyData([1, 2])` -> Expected: `"object"
+// console.log(identifyData(100));
+// console.log(identifyData({ a: 1 }));
+// console.log(identifyData([1,2]));
