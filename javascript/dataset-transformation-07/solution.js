@@ -1,5 +1,6 @@
 // Module 1: Data Cleaning & Sanitization (Manual Filtering)
 
+
 //1ANS
 // function cleanPrices(prices) {
 //     let validprice = []
@@ -95,7 +96,7 @@
 //     for(let value of items){
 //         if(value.price === undefined){
 //             continue
-           
+
 //         }
 //         update = [value]
 //     }
@@ -143,10 +144,154 @@
 // console.log(addSalePrice([{name: "Bag", price: 50}]));
 // console.log(addSalePrice([]));
 
+//4ANS
+// function flattenSeats(rows) {
+//   let flat = []
+//   for(let value of rows){
+//     for(let item of value){
+//         flat.push(item)
+//     }
+//   }
+//   return flat
+// }
+// console.log(flattenSeats([["A1", "A2"], ["B1", "B2"]]));
+// console.log(flattenSeats([["VIP1"], ["VIP2"]]));
+// console.log(flattenSeats([]));
+
+
+//6ANS
+// function generateFullNames(users) {
+//   for(let value of users){
+//     let a = value.firstName +" "+value.lastName
+//     value.fullname = a
+// }
+// return users
+// }
+// console.log(generateFullNames([{firstName: "Virat", lastName: "Kohli"}]));
+// console.log(generateFullNames([{firstName: "Aman", lastName: "Gupta"}]));
+// console.log(generateFullNames([]));
+
+
+//10ANS
+// function swapDictionary(dict) {
+//     let result1 = {}
+//     for (let key in dict) {
+//         let result = dict[key]
+//         result1[result] = key
+//     }
+//     return result1
+// }
+// console.log(swapDictionary({ "yes": "haan", "no": "nahi" }));
+// console.log(swapDictionary({ "water": "pani" }));
+// console.log(swapDictionary({}));
 
 
 // Module 3: Aggregations & Calculations (Manual Reduce)
 
+//1ANS
+// function calculateCartTotal(cartItems) {
+//   let total = 0  
+//   for(let value of cartItems){
+//     let sum = value.price*value.qty
+//     total += sum 
+//   }
+//   return total
+// }
+// console.log(calculateCartTotal([{price: 100, qty: 2}, {price: 50, qty: 1}]));
+// console.log(calculateCartTotal([{price: 200, qty : 3}]));
+// console.log(calculateCartTotal([]));
+
+
+//4ANS
+// function getAverageRating(reviews) {
+//   let sum = 0
+//   let rating = reviews.length
+//   for(let value of reviews){
+//     sum += value.stars
+//   }
+//   if(rating === 0){
+//     return 0
+//   }
+//    return sum / rating
+// }
+// console.log(getAverageRating([{stars: 5}, {stars: 4}, {stars: 3}]));
+// console.log(getAverageRating([{stars: 5}, {stars: 5}]));
+// console.log(getAverageRating([]));
+
+//6ANS
+// function getGrandTotal(nestedBills) {
+//   let sum = 0;
+//   for(let inner of nestedBills){
+//     for(let outer of inner){
+//         sum += outer
+//     }
+//   }
+//   return sum
+// }
+// console.log(getGrandTotal([[10, 20], [30, 40]]));
+// console.log(getGrandTotal([[50], [50]]));
+// console.log(getGrandTotal([]));
+
+
+//7ANS
+// function isOrderComplete(items) {
+//   let value
+//   for(let key in items){
+//     value = items[key].status
+//   }
+//   if(value === "Delivered" || value === undefined){
+//     return true
+//   }
+//   return false
+// }
+// console.log(isOrderComplete([{status: "Delivered"}, {status: "Delivered"}]));
+// console.log(isOrderComplete([{status: "Delivered"}, {status: "Pending"}]));
+// console.log(isOrderComplete([]));
+
+
+//8ANS
+// function hasPendingAction(orders) {
+//   let value
+//   for(let key in orders){
+//     value = orders[key].status
+//   }
+//   if(value === "Pending"){
+//     return true
+//   }
+//   return false
+// }
+// console.log(hasPendingAction([{status: "Delivered"}, {status: "Pending"}]));
+// console.log(hasPendingAction([{status: "Delivered"}]));
+// console.log(hasPendingAction([]));
+
+//9ANS
+// function mergeSettings(settingsArray) {
+//   let result = {}
+// for(let value of settingsArray){
+//    result = {
+//   ...result,
+//   ...value
+// }
+// }
+// return result
+// }
+// console.log(mergeSettings([{volume: 50}, {theme: "light"}]));
+// console.log(mergeSettings([{a: 1}, {a: 2, b: 3}]));
+// console.log(mergeSettings([]));
+
+
+function calculateTotalTax(cart) {
+    let TotalTax = 0
+for(let key in cart){
+    if(cart[key].isTaxable === true){
+       TotalTax= cart[key].price *0.05
+    }
+}
+  return TotalTax
+}
+console.log(calculateTotalTax([{price: 100, isTaxable: true},{price: 50, isTaxable: false}]));
+console.log(calculateTotalTax([{price: 200, isTaxable: true}]));
+console.log(calculateTotalTax([{price: 100, isTaxable: false}]));
 
 // Module 4: Relational Data Mapping (Basic Joins)
 
