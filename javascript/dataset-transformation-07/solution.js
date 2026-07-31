@@ -279,21 +279,87 @@
 // console.log(mergeSettings([{a: 1}, {a: 2, b: 3}]));
 // console.log(mergeSettings([]));
 
-
-function calculateTotalTax(cart) {
-    let TotalTax = 0
-for(let key in cart){
-    if(cart[key].isTaxable === true){
-       TotalTax= cart[key].price *0.05
-    }
-}
-  return TotalTax
-}
-console.log(calculateTotalTax([{price: 100, isTaxable: true},{price: 50, isTaxable: false}]));
-console.log(calculateTotalTax([{price: 200, isTaxable: true}]));
-console.log(calculateTotalTax([{price: 100, isTaxable: false}]));
+//10 ANS
+// function calculateTotalTax(cart) {
+//     let TotalTax = 0
+// for(let key in cart){
+//     if(cart[key].isTaxable === true){
+//        TotalTax= cart[key].price *0.05
+//     }
+// }
+//   return TotalTax
+// }
+// console.log(calculateTotalTax([{price: 100, isTaxable: true},{price: 50, isTaxable: false}]));
+// console.log(calculateTotalTax([{price: 200, isTaxable: true}]));
+// console.log(calculateTotalTax([{price: 100, isTaxable: false}]));
 
 // Module 4: Relational Data Mapping (Basic Joins)
+
+//1ANS
+// function joinUserAddress(users, addresses) {
+//     let result = []
+//     for(let i = 0; i<users.length; i++){
+//         for(let j = 0; j<addresses.length; j++){
+//             if(users[i].id === addresses[j].userId){
+//             users[i].address = addresses[j];
+//             }
+//         }
+//           result.push(users[i]);
+//     }
+
+//     return result
+// }
+// console.log(joinUserAddress([{id: 1, name: "A"}], [{userId: 1, city: "Delhi"}]));
+// console.log(joinUserAddress([{id: 2, name: "B"}], []));
+// console.log(joinUserAddress([], [{userId: 1, city: "Pune"}]));
+
+
+//2ANS
+// function mapCategoryNames(products, categoryDict) {
+//   for(let key in products){
+//     for(let keys in categoryDict){
+//         delete products[key].categoryId;
+//         products[key].categoryName = categoryDict[keys];
+//     }
+//   }
+//   return products
+// }
+// console.log(mapCategoryNames([{name: "TV", categoryId: 101}], {101: "Electronics"}));
+// console.log(mapCategoryNames([{name: "Novel", categoryId: 102}], {102: "Books"}));
+// console.log(mapCategoryNames([], {101: "Tech"}));
+
+//3ANS
+// function syncStock(oldStock, newStock) {
+//     let result = {}
+//     for (let key in oldStock) {
+//         for (let keys in newStock) {
+//             if (oldStock[key].id === newStock[keys].id) {
+//                 oldStock[key].qty += newStock[keys].qty
+//             }
+//         }
+//     }
+//     result = [...oldStock, ...newStock]
+//     return result
+// }
+// console5.log(syncStock([{ id: 1, qty: 10 }], [{ id: 1, qty: 5 }]));
+// console.log(syncStock([{ id: 1, qty: 10 }], [{ id: 2, qty: 5 }]));
+// console.log(syncStock([], [{ id: 1, qty: 2 }]));
+
+//5 ANS
+// function assignDeliveries(orders, boysArray) {
+//   for(let index in orders){ 
+//    let key = index % boysArray.length
+//    orders[index].boy = boysArray[key]  
+// }
+// return orders
+// }
+// console.log(assignDeliveries([{id: 1}, {id: 2}, {id: 3}], ["Ravi", "Aman"]));
+// console.log(assignDeliveries([{id: 1}], ["Suresh"]));
+// console.log(assignDeliveries([], ["Aman"]));
+
+
+
+
 
 
 // Module 5: Complex Real-World API Payloads (Master Level)
