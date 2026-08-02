@@ -357,6 +357,28 @@
 // console.log(assignDeliveries([{id: 1}], ["Suresh"]));
 // console.log(assignDeliveries([], ["Aman"]));
 
+// function getPriceDrops(oldPrices, newPrices) {
+//   let result = []
+//   for(let key in newPrices){
+//    if(oldPrices[key].id === newPrices[key].id){
+//     if(newPrices[key].price < oldPrices[key].price){
+//         result.push(newPrices[key])
+//     }
+//    }
+//   }
+//    return result
+// }
+// console.log(getPriceDrops([{id: 1, price: 100}], [{id: 1, price: 80}]));
+// console.log(getPriceDrops([{id: 2, price: 50}], [{id: 2, price: 60}]));
+// console.log(getPriceDrops([],[]));
+// console.log(getPriceDrops([{id: 2, price: 50}], [{id: 2, price: 40}]));
+
+let a = 10
+for(let i = 1; i<=10; i++){
+    console.log(i*a);
+    
+}
+
 
 
 
