@@ -357,6 +357,7 @@
 // console.log(assignDeliveries([{id: 1}], ["Suresh"]));
 // console.log(assignDeliveries([], ["Aman"]));
 
+//8ANS
 // function getPriceDrops(oldPrices, newPrices) {
 //   let result = []
 //   for(let key in newPrices){
@@ -373,17 +374,39 @@
 // console.log(getPriceDrops([],[]));
 // console.log(getPriceDrops([{id: 2, price: 50}], [{id: 2, price: 40}]));
 
-let a = 10
-for(let i = 1; i<=10; i++){
-    console.log(i*a);
-    
-}
+//9ANS
+// function applyUpdates(orders, updates) {
+//   for(let key in orders){
+//     if(orders[key].id === updates[key].id){
+//         return orders = updates[key]
+//     }
+//   }
+//   return orders
+// }
+// console.log(applyUpdates([{id: 1, status: "Pending"}], [{id: 1, status: "Shipped"}]));
+// console.log(applyUpdates([{id: 1, name: "A"}], [{id: 2, name: "B"}]));
+// console.log(applyUpdates([], [{id: 1, status: "Done"}]));
 
-
-
-
+//10ANS
+// function consolidateLedger(orders, payments) {
+//   let result = []
+//   for(let key1 in orders){
+//     for(let key2 in payments){
+//         if(orders[key1].txnId === payments[key2].txnId){
+//         orders[key1].mode = payments[key2].mode;
+//         result.push(orders[key1])
+//         }
+//     }
+//   }
+//   return result
+// }
+// console.log(consolidateLedger([{id: 1, txnId: "TX12"}], [{txnId: "TX12", mode: "UPI"}]));
+// console.log(consolidateLedger([{id: 1, txnId: "TX99"}], [{txnId: "TX88", mode: "Cash"}]));
+// console.log(consolidateLedger([],[]));
 
 
 // Module 5: Complex Real-World API Payloads (Master Level)
+
+
 
 
