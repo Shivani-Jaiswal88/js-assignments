@@ -407,6 +407,77 @@
 
 // Module 5: Complex Real-World API Payloads (Master Level)
 
+//1ANS
+// function extractUsersSafely(apiResponse) {
+//   if(apiResponse.payload){
+//     if(apiResponse.payload.users){
+//         return apiResponse.payload.users
+//     }
+//   }
+//   return []
+// }
+// console.log(extractUsersSafely({payload: {users: [{name: "Raj"}]}}));
+// console.log(extractUsersSafely({payload: null}));
+// console.log(extractUsersSafely({}));
+
+//2ANS
+// function arrayToMap(itemsArray) {
+//   let result ={}
+//   for(let key in itemsArray){
+//     let a = itemsArray[key]
+//    result[a.id] = a
+
+//   }
+//   return result 
+// }
+// console.log(arrayToMap([{id: 5, name: "Pen"}]));
+// console.log(arrayToMap([{id: 10, name: "Book"}, {id: 11, name: "Bag"}]));
+// console.log(arrayToMap([]));
+
+//3ANS
+// function mapToArray(itemsMap) {
+//   let result = []
+//   for(let key in itemsMap){
+//     result.push(itemsMap[key])
+//   }
+//   return result
+// }
+// console.log(mapToArray({ 5: {id: 5, name: "Pen"} }));
+// console.log(mapToArray({}));
+// console.log(mapToArray({ 1: {a: 1}, 2: {b: 2} }));
+
+
+//4ANS
+// function extractAllMenuNames(menuData) {
+//   let result = []
+//   for(let key in menuData){
+//      result.push(menuData[key].name) 
+//     for(let key1 in menuData[key].subCategories){
+//         result.push(menuData[key].subCategories[key1].name)
+//     } 
+//   }
+  
+//   return result
+// }
+// console.log(extractAllMenuNames([{name: "Men", subCategories: [{name: "Shirts"}]}]));
+// console.log(extractAllMenuNames([{name: "Electronics", subCategories: []}]));
+// console.log(extractAllMenuNames([]));
+
+function getActiveUserNames(users) {
+  // TODO: Filter and map in a single loop
+  let result = []
+  for(let key in users){
+    if(users[key].isActive === true){
+        result.push(users[key].name)
+    }
+  }
+  return result
+}
+console.log(getActiveUserNames([{name: "Raj", isActive: true}, {name: "Aman", isActive: false}]));
+console.log(getActiveUserNames([{name: "Neha", isActive: false}]));
+console.log(getActiveUserNames([]));
+
+
 
 
 
