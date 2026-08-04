@@ -456,28 +456,35 @@
 //         result.push(menuData[key].subCategories[key1].name)
 //     } 
 //   }
-  
+
 //   return result
 // }
 // console.log(extractAllMenuNames([{name: "Men", subCategories: [{name: "Shirts"}]}]));
 // console.log(extractAllMenuNames([{name: "Electronics", subCategories: []}]));
 // console.log(extractAllMenuNames([]));
 
-function getActiveUserNames(users) {
-  // TODO: Filter and map in a single loop
-  let result = []
-  for(let key in users){
-    if(users[key].isActive === true){
-        result.push(users[key].name)
-    }
-  }
-  return result
-}
-console.log(getActiveUserNames([{name: "Raj", isActive: true}, {name: "Aman", isActive: false}]));
-console.log(getActiveUserNames([{name: "Neha", isActive: false}]));
-console.log(getActiveUserNames([]));
+//5ANS
+// function getActiveUserNames(users) {
+//   let result = []
+//   for(let key in users){
+//     if(users[key].isActive === true){
+//         result.push(users[key].name)
+//     }
+//   }
+//   return result
+// }
+// console.log(getActiveUserNames([{name: "Raj", isActive: true}, {name: "Aman", isActive: false}]));
+// console.log(getActiveUserNames([{name: "Neha", isActive: false}]));
+// console.log(getActiveUserNames([]));
 
-
-
-
-
+//6ANS
+// function extractPaginatedData(apiData) {
+//   let result = []
+//   for(let key in apiData){
+//     result = result.concat(apiData[key])
+//   }
+//   return result
+// }
+// console.log(extractPaginatedData({ page1: ["A", "B"], page2: ["C"] }));
+// console.log(extractPaginatedData({ page1: [100] }));
+// console.log(extractPaginatedData({}));
