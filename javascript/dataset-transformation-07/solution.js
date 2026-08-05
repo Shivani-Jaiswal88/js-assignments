@@ -488,3 +488,24 @@
 // console.log(extractPaginatedData({ page1: ["A", "B"], page2: ["C"] }));
 // console.log(extractPaginatedData({ page1: [100] }));
 // console.log(extractPaginatedData({}));
+
+
+//7ANS
+// function calculateGrandTotal(cart) {
+//     let sum = 0
+//     for (let item of cart){
+//         sum += item.price
+//         for(let tax of item.taxes){
+//             sum += tax.amt
+//         }
+//     }
+//     return sum
+// }
+// console.log(calculateGrandTotal([{ price: 100, taxes: [{ amt: 10 }, { amt: 5 }] }]));
+// console.log(calculateGrandTotal([{price: 200, taxes: []}]));
+// console.log(calculateGrandTotal([]));
+
+
+
+
+
