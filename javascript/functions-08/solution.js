@@ -66,6 +66,68 @@
 // console.log(findHighestTemp(10));
 // console.log(findHighestTemp());
 
+//7ANS
+// function formatGuestList(family, ...kids) {
+//   return [family, ...kids]
+// }
+// console.log(formatGuestList("Sharma", "Ravi", "Neha"));
+// console.log(formatGuestList("Gupta"));
+// console.log(formatGuestList("Verma", "Rahul"));
+
+//8ANS
+// function getFirstArgument() {
+//   return arguments[0]
+// }
+// console.log(getFirstArgument("Hello","World"));
+// console.log(getFirstArgument(99,100));
+// console.log(getFirstArgument());
+
+
+//9ANS
+// function calculateDiscountedTotal(discount = 10, ...prices) {
+//     let sum = 0
+//   for(let value of prices){
+//     sum += value
+//   }
+//   return sum -= discount
+// }
+// console.log(calculateDiscountedTotal(20,100,50));
+// console.log(calculateDiscountedTotal(undefined, 100, 50));
+// console.log(calculateDiscountedTotal(0,100));
+
+//10ANS
+// function createJointMission(...teams) {
+//   let result = []
+//   for(let i = 0; i<teams.length; i++){
+//     result.push(...teams[i])
+//   }
+// return result
+// }
+// console.log(createJointMission(["A", "B"], ["C", "D"]));
+// console.log(createJointMission(["X"]));
+// console.log(createJointMission([], ["Y"]));
+
+//11ANS
+// function convertArgumentsToArray() {
+//   let result = []
+//   for(let i = 0; i<arguments.length; i++){
+//     result =[...arguments]
+//   }
+//   return result
+// }
+// console.log(convertArgumentsToArray(1,2,3));
+// console.log(convertArgumentsToArray("A","B"));
+// console.log(convertArgumentsToArray());
+
+//12ANS
+// function setupProfile(name, settings = {theme :"dark"}) {
+//   return `${name} uses ${settings.theme} theme`;
+// }
+// console.log(setupProfile("Raj", { theme: "light" }));
+// console.log(setupProfile("Aman"))
+// console.log(setupProfile("Neha", { theme: "blue" }));
+
+
 
 
 // Module 2: Arrow Functions & IIFEs
