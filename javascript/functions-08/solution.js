@@ -128,13 +128,114 @@
 // console.log(setupProfile("Neha", { theme: "blue" }));
 
 
-
-
 // Module 2: Arrow Functions & IIFEs
+
+//1ANS
+// const getSamosaBill = (qty, price) =>  qty* price
+// console.log(getSamosaBill(5, 10));
+// console.log(getSamosaBill(2, 15));
+// console.log(getSamosaBill(0,20));
+
+//2ANS
+// const checkToll = (vehicleNum) => {
+//     if(vehicleNum%2==0){
+//         return "Pass";
+//     }else{
+//         return "Wait"
+//     }
+// }
+// console.log(checkToll(1234));
+// console.log(checkToll(9999));
+// console.log(checkToll(0));
+
+// //3ANS
+// const convertToRupee = (dollors) => 83*dollors
+// console.log(convertToRupee(10));
+// console.log(convertToRupee(2));
+// console.log(convertToRupee(0));
+
+// 4ANS
+// const createPlayer = (pName) => ({ name: pName, score: 0 });
+// console.log(createPlayer("Virat"));
+// console.log(createPlayer("Rohit"));
+// console.log(createPlayer(""));
+
+// 5ANS
+// const greet = (name) => `"Hello, ${name}"`
+// console.log(greet("Aman"));
+// console.log(greet("Raj"));
+// console.log(greet(""));
+
+// 6ANS
+// const configStatus = (function () {
+//   return `"App Initialized"`
+// })();
+// console.log(configStatus);
+
+// 7ANS
+// const AuthHeader = (function(){
+//     let token = "XYZ"
+//     return `"Bearer ${token}"`
+// })()
+// console.log(AuthHeader);
+
+// 8ANS
+// const initialLight = (function () {
+//  if(Math.random()> 0.5){
+//     return "Green"
+//  }else{
+//     return "Red"
+//  }
+// })();
+// console.log(initialLight);
+// console.log(["Green", "Red"].includes(initialLight));
+// console.log(typeof initialLight);
+
+// 9ANS
+// const finalBill = (function (price, discount) {
+//   let dis = price*discount / 100 
+//   return price - dis
+// })(100, 10);
+// console.log(finalBill);
+
+//10ANS
+// const VadaPavSpice = (level) =>{
+//     if(level>5){
+//         return "Teekha"
+//     }
+//     return "Meetha"
+// }
+// console.log(VadaPavSpice(8));
+// console.log(VadaPavSpice(3));
+// console.log(VadaPavSpice(5));
+
+//11ANS
+// const findUserById = (userArray,id) =>{
+// for(let key in userArray){
+//     if(userArray[key].id === id){
+//         return userArray
+//     }
+// }
+//     return null
+// }
+// console.log(findUserById([{id: 1, name: "A"}], 1));
+// console.log(findUserById([{id: 1, name: "A"}], 2));
+// console.log(findUserById([],1));
+
+//12ANS
+// const systemInfo = (function () {
+//   let version = "2.0";
+//   return function () {
+//     return `Version is ${version}`;
+//   };
+// })();
+// console.log(systemInfo());
+// console.log(systemInfo.version);
+// console.log(typeof systemInfo);
+
 
 
 // Module 3: Scopes, Lexical Scoping & Closures
-
 
 // Module 4: Recursion & The Function Stack
 
