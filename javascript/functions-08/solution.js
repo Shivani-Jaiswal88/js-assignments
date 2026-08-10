@@ -237,6 +237,36 @@
 
 // Module 3: Scopes, Lexical Scoping & Closures
 
+//1ANS
+// let shopName = "Global Kirana";
+// function getLocalshopName(){
+//     let shopName = "Local kirana"
+//     return shopName
+// }
+// console.log(getLocalshopName());
+// console.log(shopName);
+
+//2ANS
+// function dadaJi() {
+//   let khazana = "Gold";
+//   function pota() {
+//     return khazana
+//   }
+//   return pota();
+// }
+// console.log(dadaJi());
+
+//3ANS
+// function outerRestaurant(){
+//     let dish = "samos"
+//     function innerchef(){
+//         let dish = "kachori";
+//         return dish
+//     }
+//     return innerchef()
+// }
+// console.log(outerRestaurant());
+
 // Module 4: Recursion & The Function Stack
 
 
