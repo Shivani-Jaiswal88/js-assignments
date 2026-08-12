@@ -304,10 +304,40 @@
 // console.log(check(9999));
 // console.log(check.secretPin);
 
+//8ANS
+// function createGullak() {
+//   let coins = [];
+//   function piggybank(coin){
+//     let res = coins.push(coin)
+//     return coins
+//   }
+//   return piggybank
+// }
+// const gullak = createGullak()
+// console.log(gullak(5));
+// console.log(gullak(10));
+// const gullaks = createGullak()
+// console.log(gullaks(1));
 
 
-
-
+//9ANS
+// function atmTracker(){
+//   let attempts = 0;
+//   function atmwork(){
+//     attempts++
+//     if(attempts>3){
+//       return "Blocked"
+//     }else{
+//        return "try again"
+//     }
+//   }
+//   return atmwork
+// }
+// const result = atmTracker()
+// console.log(result());
+// console.log(result());
+// console.log(result());
+// console.log(result());
 
 
 // Module 4: Recursion & The Function Stack
