@@ -267,6 +267,49 @@
 // }
 // console.log(outerRestaurant());
 
+//4ANS
+// function createKhata() {
+//   let balance = 0;
+//   return function () {
+//     return balance += 10
+//   };
+// }
+// const k = createKhata();
+// console.log(k());
+// console.log(k());
+// const k2 = createKhata()
+// console.log(k2());
+
+//5ANS
+// function tokenMachine() {
+//   let currentToken = 0;
+//   return function(){
+//     return currentToken+=1
+//   }
+// }
+// const getTkn = tokenMachine()
+// console.log(getTkn());
+// console.log(getTkn());
+// console.log(getTkn());
+
+//6ANS
+// function createVIPPass(secretPin) {
+//   function checkpin(input){
+//     return input === secretPin 
+//   }
+//   return checkpin
+// }
+// const check = createVIPPass(1234)
+// console.log(check(1234));
+// console.log(check(9999));
+// console.log(check.secretPin);
+
+
+
+
+
+
+
 // Module 4: Recursion & The Function Stack
 
 
