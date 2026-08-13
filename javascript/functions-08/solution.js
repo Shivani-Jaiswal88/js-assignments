@@ -339,6 +339,38 @@
 // console.log(result());
 // console.log(result());
 
+//11ANS
+// function salaryManager(base) {
+//   function salaryincrement(currentsalary){
+//     return base += currentsalary
+//   }
+//   return salaryincrement
+// }
+// const mySalary = salaryManager(10000)
+// console.log(mySalary(2000));
+// console.log(mySalary(3000));
+// const hrSalary = salaryManager(50000)
+// console.log(hrSalary(10000));
+
+//12ANS
+// function createBankAccount() {
+//   let balance = 0;
+//   return {
+//     deposit: function (amt) {
+//       return balance += amt
+//     },
+//     getBalance: function () {
+//       return balance
+//     },
+//   };
+// }
+// const acc = createBankAccount()
+// console.log(acc.deposit(100));
+// console.log(acc.getBalance());
+// console.log(acc.balance);
+// console.log(acc.deposit(50));
+// console.log(acc.getBalance());
+
 
 // Module 4: Recursion & The Function Stack
 
