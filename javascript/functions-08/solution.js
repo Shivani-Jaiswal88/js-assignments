@@ -374,6 +374,102 @@
 
 // Module 4: Recursion & The Function Stack
 
+//1ANS
+// function countdown(n) {
+//   if (n === 0) return [0];
+//   return [n].concat(countdown(n - 1));
+// }
+// console.log(countdown(3));
+// console.log(countdown(1));
+// console.log(countdown(0));
+
+//2ANS
+// function factorial(n) {
+//   if(n<=1){
+//     return 1
+//   }
+//   return n* factorial(n-1)
+// }
+// console.log(factorial(5));
+// console.log(factorial(3));
+// console.log(factorial(1));
+
+//4ANS
+// function getLength(arr) {
+//   if(arr.length === 0){
+//     return 0
+//   }else{
+//     return 1 + getLength(arr.slice(1))
+//   }
+// }
+// console.log(getLength([1, 2, 3]));
+// console.log(getLength(["A", "B", "C", "D"]));
+// console.log(getLength([]));
+
+
+//5ANS
+// function reverseString(str) {
+//   if (str === "") {
+//     return "";
+//   }
+//   return reverseString(str.substring(1)) + str.charAt(0);
+// }
+// console.log(reverseString("Ravi"));
+// console.log(reverseString("JS"));
+// console.log(reverseString(""));
+
+
+//6ANS
+// function power(base, exp) {
+//   if(exp === 0){
+//     return 1
+//   }
+//   return base** exp
+// }
+// console.log(power(2,3));
+// console.log(power(5,2));
+// console.log(power(10,0));
+
+
+//7ANS
+// function fibonacci(n) {
+//   if(n === 0){
+//     return 0
+//   }else if(n === 1){
+//     return 1
+//   }
+//   return fibonacci(n -1) + fibonacci(n-2)
+// }
+// console.log(fibonacci(5));
+// console.log(fibonacci(6));
+// console.log(fibonacci(0));
+
+//10ANS
+// function dev(){
+//   return "task Done"
+// }
+// function lead(){
+//   return "Task Done by lead"
+// }
+// function manager(){
+//   return "Task Done by lead by manager"
+// }
+// console.log(dev());
+// console.log(lead());
+// console.log(manager());
+
+
+//12ANS
+// function createSlug(str) {
+//   if(!str.includes(" ")){
+//     return str
+//   }
+//   return createSlug(str.replace(" ", "-"))
+// }
+// console.log(createSlug("Paneer butter masala"));
+// console.log(createSlug("tea"));
+// console.log(createSlug(" a b c "));
+
 
 // Module 5: Callbacks, Higher-Order & Built-In Functions
 
