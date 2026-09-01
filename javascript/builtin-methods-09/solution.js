@@ -64,15 +64,25 @@
 // console.log(convertToObjects(["A", "B","C"]));
 // console.log(convertToObjects([]));
 
-function extractRatings(menuData) {
-  // TODO: Safely map out the inner rating value
-  let Rate = menuData.map(item => item.details.rating)
-  return Rate
+//7ANS
+// function extractRatings(menuData) {
+//   let Rate = menuData.map(item => item.details.rating)
+//   return Rate
+// }
+// console.log(extractRatings([{details: {rating: 4}}, {details: {rating: 5}}]));
+// console.log(extractRatings([{details: {rating: 3.5}}]));
+// console.log(extractRatings([{details: {rating: 1}}, {details: {rating: 2}}, {details: {rating: 3}}]));
+// console.log(extractRatings([]));
+
+function generateSlugs(names) {
+  let slug = names.map(item => item.toLowerCase().split(" ").join("-"))
+  return slug
 }
-console.log(extractRatings([{details: {rating: 4}}, {details: {rating: 5}}]));
-console.log(extractRatings([{details: {rating: 3.5}}]));
-console.log(extractRatings([{details: {rating: 1}}, {details: {rating: 2}}, {details: {rating: 3}}]));
-console.log(extractRatings([]));
+console.log(generateSlugs(["Shahi Paneer", "Dal Makhani"]));
+console.log(generateSlugs(["Tea"]));
+console.log(generateSlugs(["A B C", "X Y Z"]));
+console.log(generateSlugs([]));
+
 
 // Module 2: Data Extraction (`Array.filter`)
 
