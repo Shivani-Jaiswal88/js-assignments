@@ -74,17 +74,104 @@
 // console.log(extractRatings([{details: {rating: 1}}, {details: {rating: 2}}, {details: {rating: 3}}]));
 // console.log(extractRatings([]));
 
-function generateSlugs(names) {
-  let slug = names.map(item => item.toLowerCase().split(" ").join("-"))
-  return slug
-}
-console.log(generateSlugs(["Shahi Paneer", "Dal Makhani"]));
-console.log(generateSlugs(["Tea"]));
-console.log(generateSlugs(["A B C", "X Y Z"]));
-console.log(generateSlugs([]));
+
+//8ANS
+// function generateSlugs(names) {
+//   let slug = names.map(item => item.toLowerCase().split(" ").join("-"))
+//   return slug
+// }
+// console.log(generateSlugs(["Shahi Paneer", "Dal Makhani"]));
+// console.log(generateSlugs(["Tea"]));
+// console.log(generateSlugs(["A B C", "X Y Z"]));
+// console.log(generateSlugs([]));
 
 
 // Module 2: Data Extraction (`Array.filter`)
+
+//1ANS
+// function getTrainsToDelhi(trains) {
+//   let des = trains.filter(station => station.to === "Delhi")
+//   return des
+// }
+// console.log(getTrainsToDelhi([{name: "Rajdhani", to: "Delhi"}, {name: "Shatabdi", to: "Mumbai"}]));
+// console.log(getTrainsToDelhi([{name: "Local", to: "Pune"}]));
+// console.log(getTrainsToDelhi([{name: "T1", to: "Delhi"}, {name: "T2", to: "Delhi"}]));
+// console.log(getTrainsToDelhi([]));
+
+//2ANS
+// function getAvailableTrains(trains) {
+//   let seatAvailable = trains.filter(seat => seat.seats > 0)
+//   return seatAvailable
+// }
+// console.log(getAvailableTrains([{id: 1, seats: 50}, {id: 2, seats: 0}]));
+// console.log(getAvailableTrains([{id: 1, seats: 0}, {id: 2, seats: -5}]));
+// console.log(getAvailableTrains([{id: 1, seats: 100}]));
+// console.log(getAvailableTrains([]));
+
+//3ANS
+// function removeCancelled(trains) {
+//   let cancelled = trains.filter(train => train.isCancelled === false)
+//   return cancelled
+// }
+// console.log(removeCancelled([{id: 1, isCancelled: true}, {id: 2, isCancelled: false}]));
+// console.log(removeCancelled([{id: 1, isCancelled: true}]));
+// console.log(removeCancelled([{id: 1, isCancelled: false}, {id: 2, isCancelled: false}]));
+// console.log(removeCancelled([]));
+
+
+//4ANS
+// function getPremiumTrains(trains) {
+//   let getPremium = trains.filter(train => train.price > 1500)
+//   return getPremium
+// }
+// console.log(getPremiumTrains([{id: 1, price: 1600}, {id: 2, price: 800}]));
+// console.log(getPremiumTrains([{id: 1, price: 1500}]));
+// console.log(getPremiumTrains([{id: 1, price: 2000}, {id: 2, price: 3000}]));
+// console.log(getPremiumTrains([]));
+
+//5ANS
+// function searchTrains(trains, query) {
+//   let result = trains.filter(train => train.name.includes(query))
+//   return result
+// }
+// console.log(searchTrains([{name: "Duronto Express"}, {name: "Shatabdi"}], "Express"));
+// console.log(searchTrains([{name: "Pune Mail"}], "Express"));
+// console.log(searchTrains([{name: "Express A"}, {name: "Express B"}], "Express"));
+// console.log(searchTrains([],"test"));
+
+
+//6ANS
+// function filterACCoaches(coaches) {
+//   let onlyaccoaches = coaches.filter(coach => coach.includes("AC"))
+//   return onlyaccoaches
+// }
+// console.log(filterACCoaches(["1AC", "General", "Sleeper", "3AC"]));
+// console.log(filterACCoaches(["General", "Sleeper"]));
+// console.log(filterACCoaches(["AC Chair Car", "General"]));
+// console.log(filterACCoaches([]));
+
+//7ANS
+// function cleanSchedule(stops) {
+//   let result = stops.filter(Boolean => Boolean)
+//   return result
+// }
+// console.log(cleanSchedule(["Delhi", null, "Agra", "", undefined]));
+// console.log(cleanSchedule([null, undefined, ""]));
+// console.log(cleanSchedule(["Mumbai", "Pune"]));
+// console.log(cleanSchedule([]));
+
+//8ANS
+// function getAvailableTrainNames(trains) {
+//   let result = trains.filter(train => train.seats > 0).map(train => train.name)
+//   return result
+// }
+// console.log(getAvailableTrainNames([{name: "A", seats: 10}, {name: "B", seats: 0}]));
+// console.log(getAvailableTrainNames([{name: "X", seats: 0}, {name: "Y", seats: 0}]));
+// console.log(getAvailableTrainNames([{name: "P", seats: 5}, {name: "Q", seats: 5}]));
+// console.log(getAvailableTrainNames([]));
+
+
+
 
 
 // Module 3: Aggregation (`Array.reduce`)
