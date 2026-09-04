@@ -171,10 +171,84 @@
 // console.log(getAvailableTrainNames([]));
 
 
-
-
-
 // Module 3: Aggregation (`Array.reduce`)
+
+//1ANS
+// function getGrandTotal(prices) {
+//   let result = prices.reduce((total,num) =>{return  total + num;},0)
+//   return result
+// }
+// console.log(getGrandTotal([500,200,100]));
+// console.log(getGrandTotal([99]));
+// console.log(getGrandTotal([0, 0, 50]));
+// console.log(getGrandTotal([]));
+
+//2ANS
+// function getTotalItems(cart) {
+//   let result = cart.reduce((total,num)=>{return total + num.qty},0)
+//   return result
+// }
+// console.log(getTotalItems([{qty: 2}, {qty: 3}, {qty: 1}]));
+// console.log(getTotalItems([{qty: 5}]));
+// console.log(getTotalItems([{qty: 0}, {qty: 0}]));
+// console.log(getTotalItems([]));
+
+
+//3ANS
+// function getMaxPrice(prices) {
+//   let maxvalue = prices.reduce((Acc, Current) => {return Math.max(Acc,Current)},0)
+//   return maxvalue
+// }
+// console.log(getMaxPrice([100, 500, 250]));
+// console.log(getMaxPrice([50, 50]));
+// console.log(getMaxPrice([10]));
+// console.log(getMaxPrice([]));
+
+//4ANS
+// function createSummary(items) {
+//   let result = items.reduce((acc,curr,index) =>{ return index === 0 ? curr : `${acc}, ${curr}`}," ")
+//   return result
+// }
+// console.log(createSummary(["Shoes", "Watch"]));
+// console.log(createSummary(["Bag"]));
+// console.log(createSummary(["A", "B", "C"]));
+// console.log(createSummary([]));
+
+//6ANS
+// function calculateTaxes(cart) {
+//   let result = cart.reduce((acc,curr) =>{return curr.isTaxable === true ?  acc + (curr.price *0.10) : acc},0)
+//    return result
+// }
+// console.log(calculateTaxes([{price: 200, isTaxable: true}, {price: 100, isTaxable: false}]));
+// console.log(calculateTaxes([{price: 500, isTaxable: true}]));
+// console.log(calculateTaxes([{price: 100, isTaxable: false}]));
+// console.log(calculateTaxes([]));
+
+
+//7ANS
+// function flattenBundles(bundles) {
+//   let result = bundles.reduce((acc,Current) =>{return acc.concat(Current)},[])
+//   return result
+// }
+// console.log(flattenBundles([["A", "B"], ["C"]]));
+// console.log(flattenBundles([["X"], ["Y"], ["Z"]]));
+// console.log(flattenBundles([[], ["A"]]));
+// console.log(flattenBundles([]));
+
+
+//8ANS
+// function getFinalStatement(cart) {
+//   let result = cart.map(item => item.price * item.qty)
+//    let total = result.reduce((total, sum) => {
+//     return total + sum;
+//   }, 0);
+//     return "Total Cost: ₹ " + total + "/-";  
+// }
+// console.log(getFinalStatement([{price: 10, qty: 2}, {price: 20, qty: 1}]));
+// console.log(getFinalStatement([{price: 100, qty: 3}]));
+// console.log(getFinalStatement([{price: 50, qty: 0}]));
+// console.log(getFinalStatement([]));
+
 
 
 // Module 4: Sorting Data (`Array.sort`)
