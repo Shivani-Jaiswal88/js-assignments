@@ -109,9 +109,6 @@
 
 // 5 ANS
 
-// **Scenario (Problem):** Ek developer ne Simple Interest calculate karne ka formula likha hai par variables ke naam `a`, `b`, `c` rakh diye hain,
-//  jisse code samajh nahi aa raha.
-
 // function Interest(principal,Rate,Time){
 //     let d =  (principal * Rate * Time) /100;
 //     return d
@@ -123,7 +120,6 @@
 
 //1 ANS
 // let baseUrl = `"[https://api.mywebsite.com](https://api.mywebsite.com)"`;
-
 // function loginForm(){
 //     // return baseUrl
 //     return baseUrl + "/Login";
@@ -137,25 +133,12 @@
 
 
 // 2 ANS 
-// my solve question 
-
 // function pin(){
 //     let ATM_PIN = 1542;
 //     return ATM_PIN
 // }
 // console.log(pin());
 // console.log(pin()); 
-
-// assignment solve
-
-// function pin(inputpin){
-//     let secretCode = 1524;
-//     return inputpin === secretCode;
-// }
-// console.log(pin(1524));
-// console.log(pin(5867));
-// console.log(typeof secretCode);
-
 
 //3 ANS
 // function discount(amount){
@@ -193,9 +176,6 @@
 // console.log(themes());
 
 
-
-
-
 // Module 4: Variable Hoisting
 
 //1 ANS
@@ -219,18 +199,29 @@
 // }
 // console.log(getCity("Mumbai"));
 
-//5 ANS
-// let player = "playerReady"
-// function gamezone(){
-//     if(player === "playerReady"){
-//         return "GameStart"
-//     }else{
-//         return "Error"
-//     }
+//3ANS
+// const greet = function (name) {
+//   return `Welcome, ${name}!`;
+// };
+
+// let result = greet("Alice");
+
+// console.log(result);
+
+//4ANS
+// function displayMessage(condition) {
+//   var msg = "Global Hello";
+//   if (condition) {
+//     let msg = "Block Hello";
+//     return msg;
+//   }
+//   return msg;
 // }
 
-// console.log(gamezone());
+// console.log(displayMessage(true));  
+// console.log(displayMessage(false)); 
 
+//5 ANS
 // console.log(checkGameStatus());
 // function checkGameStatus() {
 //   // Fix the order to prevent hoisting bugs
