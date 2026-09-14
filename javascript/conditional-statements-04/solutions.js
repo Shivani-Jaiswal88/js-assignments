@@ -92,6 +92,16 @@
 // console.log(buyJalebi(1.5));
 // console.log(buyJalebi(5));
 
+//9ANS
+// function getMomosDip(userPreference) {
+//   if(userPreference.likesSpicy === true){
+//     return "Red Chutney"
+//   }
+//   return "Mayonnaise"
+// }
+// console.log(getMomosDip({ likesSpicy: true }));
+// console.log(getMomosDip({ likesSpicy: false }));
+
 //10 ANS
 // function checkShopStatus(day) {
 //   if(day === "sunday"){
@@ -342,6 +352,20 @@
 // console.log(getMomosPrice(true));
 // console.log(getMomosPrice(false));
 
+//9ANS
+// function checkVIPDiscount(customerName, vipList) {
+//   return vipList.includes(customerName)? 10 :0
+// }
+// console.log(checkVIPDiscount("Raju", ["Raju", "Babu", "Shyam"]));
+// console.log(checkVIPDiscount("Kachra Seth", ["Raju", "Babu"]));
+
+//10ANS
+// function getFinalAutoFare(rideData,) {
+//   return rideData.isNight === true ? rideData.baseFare*2 : rideData.baseFare
+// }
+// console.log(getFinalAutoFare({baseFare: 50, isNight:true}));
+// console.log(getFinalAutoFare({baseFare: 20, isNight:false}));
+
 // Module 4: Mixed Logic & Intermediate Hurdlesconsole.log(checkShopStatus("sunday"));
 
 //1  ANS
@@ -443,6 +467,23 @@
 // console.log(getBiryaniBill({ type: "veg", portion: "half" }));
 // console.log(getBiryaniBill({ type: "chicken", portion: "half" }));
 
+function generateDosaBill(basePrice, isParcel) {
+   let receipt = {}
+   if(isParcel === true){
+    receipt.billAmount = basePrice +10
+    return receipt
+   }
+    receipt.billAmount = basePrice
+    return receipt
+//   return isParcel === true ? billAmount.basePrice+10 :billAmount.basePrice
+//   return {
+//     billAmount: /* Ternary magic here */
+//   };
+}
+console.log(generateDosaBill(50, true));
+console.log(generateDosaBill(50, false));
+
+
 //10ANS
 // function checkWeekendOffer(day, amount) {
 //   if(day === "Saturday" || day === "Sunday" && amount >= 200){
@@ -456,18 +497,3 @@
 // console.log(checkWeekendOffer("Sunday",150));
 
 
-
-// **Scenario:** Dosa order complete hone par bill receipt object banana hai. Agar order `isParcel` true hai toh packaging fee 10 Rs extra judti hai.
-
-// **Requirements:** Ek function banayein jo ek object return kare. Object ki `total` key par ternary operator lagayein (`basePrice` + 10 ya sirf `basePrice`).
-function generateDosaBill(basePrice, isParcel) {
-   {basePrice }
-  return isParcel === true ? billAmount.basePrice+10 :billAmount.basePrice
-//   return {
-//     billAmount: /* Ternary magic here */
-//   };
-}
-console.log(generateDosaBill(50, true));
-
-// - `generateDosaBill(50, true)` -> Expected: `{ billAmount: 60 }`
-// - `generateDosaBill(50, false)` -> Expected: `{ billAmount: 50 }`
