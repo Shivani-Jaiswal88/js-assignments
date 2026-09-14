@@ -467,21 +467,18 @@
 // console.log(getBiryaniBill({ type: "veg", portion: "half" }));
 // console.log(getBiryaniBill({ type: "chicken", portion: "half" }));
 
-function generateDosaBill(basePrice, isParcel) {
-   let receipt = {}
-   if(isParcel === true){
-    receipt.billAmount = basePrice +10
-    return receipt
-   }
-    receipt.billAmount = basePrice
-    return receipt
-//   return isParcel === true ? billAmount.basePrice+10 :billAmount.basePrice
-//   return {
-//     billAmount: /* Ternary magic here */
-//   };
-}
-console.log(generateDosaBill(50, true));
-console.log(generateDosaBill(50, false));
+//9ANS
+// function generateDosaBill(basePrice, isParcel) {
+//    let receipt = {}
+//    if(isParcel === true){
+//     receipt.billAmount = basePrice +10
+//     return receipt
+//    }
+//     receipt.billAmount = basePrice
+//     return receipt
+// }
+// console.log(generateDosaBill(50, true));
+// console.log(generateDosaBill(50, false));
 
 
 //10ANS
