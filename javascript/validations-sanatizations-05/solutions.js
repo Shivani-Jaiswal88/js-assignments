@@ -70,7 +70,16 @@
 // console.log(sanitizeUdhaarFlag("true"));
 // console.log(sanitizeUdhaarFlag(1));
 
-//10 ANS
+//9ANS
+// function validatePincode(pincode) {
+//  pincode = pincode.trim()
+//   return pincode.length === 0 ? "Invalid Pincode" : pincode
+// }
+// console.log(validatePincode("400001"));
+// console.log(validatePincode("   "));
+// console.log(validatePincode(""));
+
+// 10 ANS
 // function sanitizeDiscountMath(result) {
 //   return result === Infinity ? 0 : result
 // }
@@ -113,7 +122,9 @@
 // }
 // console.log(sanitizeUserEmail({ email: "Aman@GMAIL.com" }));
 // console.log(sanitizeUserEmail({email: "test@test.com"}));
-// console.log(sanitizeUserEmail({name : "Raj"}));
+// console.log(sanitizeUserEmail(
+// - `validatePincode("   ")` -> Expected: `"Invalid Pincode"`
+// - `validatePincode("")` -> Expected: `"Invalid Pincode"`{name : "Raj"}));
 
 //5ANS
 // function getDeliveryCity(customer) {
@@ -135,15 +146,6 @@
 // console.log(sanitizeInventory({stockQty : 20}));
 // console.log(sanitizeInventory({stockQty: 0}));
 
-// this my code 
-// function sanitizeInventory(inventory) {
-//     inventory = typeof inventory.stockQty === "string" ? Number(inventory?.stockQty) : inventory
-//     return inventory
-
-// }
-// console.log(sanitizeInventory({ stockQty: "50" }));
-// console.log(sanitizeInventory({stockQty : 20}));
-// console.log(sanitizeInventory({stockQty: 0}));
 
 //7 ANS
 // function applyDefaultSpice(order) {
@@ -186,6 +188,21 @@
 // console.log(preventRoleHack({role:"user"}));
 
 
+//10ANS
+// function sanitizeStatus(user) {
+//   if (user.isActive === true || user.isActive.toLowerCase() === "true") {
+//     user.isActive = true;
+//   } else {
+//     user.isActive = false;
+//   }
+
+//   return user;
+// }
+// console.log(sanitizeStatus({ isActive: "true" }));
+// console.log(sanitizeStatus({ isActive: "false" }));
+// console.log(sanitizeStatus({ isActive: true }));
+
+
 // Module 3: Group Orders & Collection Checks (Array Validations)
 
 //1 ANS
@@ -207,13 +224,13 @@
 
 
 //3 ANS trim nii hua 
-// function enforceCouponLimit(items) {
-//   return items.length > 3? items.slice(0,3) : items
+function enforceCouponLimit(items) {
+  return items.length > 3? items.slice(0,3) : items
 
-// }
-// console.log(enforceCouponLimit(["chai","coffee","Biscuit","Rusk"]));
-// console.log(enforceCouponLimit(["chai","Coffee"]));
-// console.log(enforceCouponLimit([1,2,3,4,5]));
+}
+console.log(enforceCouponLimit(["chai","coffee","Biscuit","Rusk"]));
+console.log(enforceCouponLimit(["chai","Coffee"]));
+console.log(enforceCouponLimit([1,2,3,4,5]));
 
 //4ANS
 // function getFirstInQueue(queue) {
@@ -414,6 +431,19 @@
 // console.log(getDiscountRate(false,true));
 // console.log(getDiscountRate(false,false));
 
+//10ANS
+// function formatAPIRequest(payload) {
 
-
+//   if (!payload.token) {
+//     return null;
+//   }
+//   if (!Array.isArray(payload.metadata)) {
+//     payload.metadata = [];
+//   }
+//   payload.status = payload.status.toLowerCase();
+//   return payload;
+// }
+// console.log(formatAPIRequest({ token: "123", status: "ACTIVE" }));
+// console.log(formatAPIRequest({ status: "ACTIVE" }));
+// console.log(formatAPIRequest({ token: "abc", status: "Pending", metadata: ["Logs"] }));
 
