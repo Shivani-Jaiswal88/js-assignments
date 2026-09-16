@@ -317,22 +317,20 @@
 // console.log(bringCaptainsTop([{name: "P", isCaptain: false}, {name: "Q", isCaptain: false}]));
 // console.log(bringCaptainsTop([]));
 
-function sortLeaderboard(players) {
-  // TODO: Sort by runs descending, if tied, sort by strikeRate descending
-  return players.sort((a,b) =>{
-    if(a.runs === b.runs){
-        return b.sr - a.sr
-    }else{
-        return b.runs - a.runs
-    }
-    // return players
-  })
-  
-}
-console.log(sortLeaderboard([{id: 1, runs: 500, sr: 120}, {id: 2, runs: 500, sr: 150}]));
-console.log(sortLeaderboard([{id: 1, runs: 600, sr: 100}, {id: 2, runs: 500, sr: 150}]));
-console.log(sortLeaderboard([{id: 1, runs: 100, sr: 100}]));
-console.log(sortLeaderboard([]));
+//8ANS
+// function sortLeaderboard(players) {
+//   return players.sort((a,b) =>{
+//     if(a.runs === b.runs){
+//         return b.sr - a.sr
+//     }else{
+//         return b.runs - a.runs
+//     }
+//   })
+// }
+// console.log(sortLeaderboard([{id: 1, runs: 500, sr: 120}, {id: 2, runs: 500, sr: 150}]));
+// console.log(sortLeaderboard([{id: 1, runs: 600, sr: 100}, {id: 2, runs: 500, sr: 150}]));
+// console.log(sortLeaderboard([{id: 1, runs: 100, sr: 100}]));
+// console.log(sortLeaderboard([]));
 
 
 
