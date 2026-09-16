@@ -253,6 +253,105 @@
 
 // Module 4: Sorting Data (`Array.sort`)
 
+//1ANS
+// function sortRunsAscending(runs) {
+//   return runs.sort((a ,b) => a -b)
+// }
+// console.log(sortRunsAscending([50, 10, 100]));
+// console.log(sortRunsAscending([0, 5, 2]));
+// console.log(sortRunsAscending([10, 10, 10]));
+// console.log(sortRunsAscending([]));
+
+//2ANS
+// function sortRunsDescending(runs) {
+//   return runs.sort((a , b) => b - a)
+// }
+// console.log(sortRunsDescending([50, 120, 80]));
+// console.log(sortRunsDescending([1, 100, 99]));
+// console.log(sortRunsDescending([5,5]));
+// console.log(sortRunsDescending([]));
+
+//3ANS
+// function sortNamesAZ(names) {
+//   return names.sort()
+// }
+// console.log(sortNamesAZ(["Virat", "Rohit", "Dhoni"]));
+// console.log(sortNamesAZ(["Zack", "Aman"]));
+// console.log(sortNamesAZ(["Sam", "Sam"]));
+// console.log(sortNamesAZ([]));
+
+//4ANS
+// function sortPlayersByRuns(players) {
+//   return players.sort((a,b) => b.runs - a.runs)
+// }
+// console.log(sortPlayersByRuns([{name: "A", runs: 100}, {name: "B", runs: 300}]));
+// console.log(sortPlayersByRuns([{name: "X", runs: 50}, {name: "Y", runs: 20}]));
+// console.log(sortPlayersByRuns([{name: "P", runs: 10}]));
+// console.log(sortPlayersByRuns([]));
+
+
+//5ANS
+// function sortByAverage(players) {
+//   return players.sort((a,b) => a.avg - b.avg)
+// }
+// console.log(sortByAverage([{id: 1, avg: 45.5}, {id: 2, avg: 30.2}]));
+// console.log(sortByAverage([{id: 1, avg: 50.1}, {id: 2, avg: 50.9}]));
+// console.log(sortByAverage([{id: 1, avg: 0}]));
+// console.log(sortByAverage([]));
+
+//6ANS
+// function sortObjectsByName(players) {
+//   return players.sort((a , b) =>a.name.localeCompare(b.name))
+// }
+// console.log(sortObjectsByName([{name: "Virat"}, {name: "Dhoni"}]));
+// console.log(sortObjectsByName([{name: "Z"}, {name: "A"}]));
+// console.log(sortObjectsByName([{name: "B"}]));
+// console.log(sortObjectsByName([]));
+
+//7ANS
+// function bringCaptainsTop(players) {
+//   return players.sort((a,b) => Number(b.isCaptain) - Number(a.isCaptain))
+// }
+// console.log(bringCaptainsTop([{name: "A", isCaptain: false}, {name: "B", isCaptain: true}]));
+// console.log(bringCaptainsTop([{name: "X", isCaptain: true}, {name: "Y", isCaptain: false}]));
+// console.log(bringCaptainsTop([{name: "P", isCaptain: false}, {name: "Q", isCaptain: false}]));
+// console.log(bringCaptainsTop([]));
+
+function sortLeaderboard(players) {
+  // TODO: Sort by runs descending, if tied, sort by strikeRate descending
+  return players.sort((a,b) =>{
+    if(a.runs === b.runs){
+        return b.sr - a.sr
+    }else{
+        return b.runs - a.runs
+    }
+    // return players
+  })
+  
+}
+console.log(sortLeaderboard([{id: 1, runs: 500, sr: 120}, {id: 2, runs: 500, sr: 150}]));
+console.log(sortLeaderboard([{id: 1, runs: 600, sr: 100}, {id: 2, runs: 500, sr: 150}]));
+console.log(sortLeaderboard([{id: 1, runs: 100, sr: 100}]));
+console.log(sortLeaderboard([]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Module 5: Object Methods Mastery
 
