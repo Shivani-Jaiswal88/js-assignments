@@ -333,23 +333,101 @@
 // console.log(sortLeaderboard([]));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Module 5: Object Methods Mastery
+
+//1ANS
+// function getProfileKeys(userObj) {
+//   return Object.keys(userObj);
+// }
+// console.log(getProfileKeys({name: "Aman", balance: 100}));
+// console.log(getProfileKeys({accType: "Savings"}));
+// console.log(getProfileKeys({a: 1, b: 2, c: 3}));
+// console.log(getProfileKeys({}));
+
+
+//2ANS
+// function getFamilyTotal(balancesObj) {
+//     let total = 0
+//     let item = Object.values(balancesObj)
+//     for(let values of item){
+//         total += values
+//     }
+//     return total
+// }
+// console.log(getFamilyTotal({ father: 100, mother: 200 }));
+// console.log(getFamilyTotal({son: 50}));
+// console.log(getFamilyTotal({a: 0, b: 0}));
+// console.log(getFamilyTotal({}));
+
+//3ANS
+// function convertToTableData(dataObj) {
+//   return Object.entries(dataObj)
+// }
+// console.log(convertToTableData({a: 1, b: 2}));
+// console.log(convertToTableData({name: "Raj"}));
+// console.log(convertToTableData({x: true}));
+// console.log(convertToTableData({}));
+
+//4ANS
+// function lockConfiguration(configObj) {
+//   return Object.freeze(configObj)
+// }
+// const obj1 = lockConfiguration({rate: 5}); 
+// obj1.rate = 10
+// console.log(obj1.rate);
+// const obj2 = lockConfiguration({fee: 0});
+// obj2.newKey = 1
+// console.log(obj2.newKey);
+// const obj3 = lockConfiguration({name: "Bank"})
+// console.log(obj3.name);
+// console.log(Object.isFrozen(lockConfiguration({})));
+
+//5ANS
+
+// function secureProfile(userObj) {
+//   return Object.seal(userObj)
+// }
+// const p1 = secureProfile({age: 20});
+// p1.age = 25
+// console.log(p1.age);
+// const p2 = secureProfile({name: "A"});
+// p2.role = "Admin"
+// console.log(p2.role);
+// const p3 = secureProfile({name: "A"});
+// delete p3.name 
+// console.log(p3.name);
+// console.log(Object.isSealed(secureProfile({})));
+
+//6ANS
+
+// function mergeAccounts(oldAcc, newAcc) {
+//   return Object.assign({...oldAcc,...newAcc})
+// }
+// console.log(mergeAccounts({balance: 100}, {type: "Saving"}));
+// console.log(mergeAccounts({a: 1}, {a: 2, b: 3}));
+// console.log(mergeAccounts({}, {x: 10}));
+// console.log(mergeAccounts({}, {}));
+
+//7ANS
+// function isProfileEmpty(profile) {
+//   let keys  = Object.keys(profile)
+//   if(keys.length === 0){
+//     return true
+//   }else{
+//     return false
+//   }
+// }
+// console.log(isProfileEmpty({}));
+// console.log(isProfileEmpty({name: "Aman"}));
+// console.log(isProfileEmpty({age: 20, city: "Pune"}));
+// console.log(isProfileEmpty({ length: 0 }));
+
+//8ANS
+// function matrixToObject(entriesArray) {
+//     return Object.fromEntries(entriesArray)
+// }
+// console.log(matrixToObject([["a", 1], ["b", 2]]));
+// console.log(matrixToObject([["name", "Raj"]]));
+// console.log(matrixToObject([["x", true], ["y", false]]));
+// console.log(matrixToObject([]));
 
