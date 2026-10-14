@@ -195,6 +195,101 @@
 // res = applyDiscount(0, 20)
 // console.log(res);
 
+//5ANS
+// const filterInStock = (cart) => {
+//   return cart.filter(item => item.inStock === true)
+// };
+// let res = filterInStock([{id: 1, inStock: true}, {id: 2, inStock: false}])
+// console.log(res);
+// res = filterInStock([{id: 1, inStock: false}])
+// console.log(res);
+// res = filterInStock([{id: 1, inStock: true}])
+// console.log(res);
+// res = filterInStock([])
+// console.log(filterInStock([]));
+
+//6ANS
+// const updateQuantity = (cart, itemId, newQuantity) => {
+//   for(let item of cart){
+//     if(item.id === itemId){
+//         item.qty = newQuantity
+//     }
+//   }
+//   return cart
+// };
+// let res = updateQuantity([{id: 1, qty: 2}], 1, 3)
+// console.log(res);
+// res = updateQuantity([{id: 2, qty: 1}], 1, 5)
+// console.log(res);
+// res = updateQuantity([{id: 1, qty: 2}], 1, 0)
+// console.log(res);
+// res = updateQuantity([], 1, 2)
+// console.log(res);
+
+
+//7ANS
+// const countCartItems = (cart) => {
+//   let sum = 0;
+//   for(let item of cart){
+//     sum += item.qty
+//   }
+//   return sum
+// };
+
+// let res = countCartItems([{qty: 2}, {qty: 3}])
+// console.log(res);
+// res = countCartItems([{qty: 1}])
+// console.log(res);
+// res = countCartItems([{qty: 0}, {qty: 0}])
+// console.log(res);
+// res = countCartItems([])
+// console.log(res);
+
+
+//8ANS
+// const calculateTax = (cart) => {
+//     let discount = 0;
+//   for(let item of cart){
+//     if(item.type === "food"){
+//        discount += item.price * 0.05 % 100
+//     }else if(item.type === "drink"){
+//       discount += item.price * 0.18 % 100   
+//     }
+//   }
+//   return discount
+// };
+
+// let res = calculateTax([{type: "food", price: 100}, {type: "drink", price: 100}])
+// console.log(res);
+// res = calculateTax([{type: "food", price: 200}])
+// console.log(res);
+// res = calculateTax([{type: "other", price: 100}])
+// console.log(res);
+// res = calculateTax([])
+// console.log(res);
+
+
+//9ANS
+// const addDeliveryFee = (subtotal) => {
+//     if (subtotal === 0) {
+//         return 0
+//     }
+//     if (subtotal < 500) {
+//         return subtotal + 50
+//     } else {
+//         return subtotal
+//     }
+// };
+// let res = addDeliveryFee(300)
+// console.log(res);
+// res = addDeliveryFee(500)
+// console.log(res);
+// res = addDeliveryFee(600)
+// console.log(res);
+// res = addDeliveryFee(0)
+// console.log(res);
+
+
 // Module 3: User Profiles & Settings Data
 
 
