@@ -289,6 +289,61 @@
 // res = addDeliveryFee(0)
 // console.log(res);
 
+//10ANS
+// const formatCurrency = (amount) => {
+// return `₹${(amount).toFixed(2)}`
+// }
+// let res = formatCurrency(500)
+// console.log(res);
+// res = formatCurrency(250.5)
+// console.log(res);
+// res = formatCurrency(10.123)
+// console.log(res);
+// res = formatCurrency(0)
+// console.log(res);
+
+//11ANS
+// const checkAvailability = (cart) => {
+//     for (let item of cart) {
+//         if (item.isAvailable === true) {
+//         } else if (item.isAvailable === false) {
+//             return false
+//         }
+//     }
+//     return true
+
+// };
+
+// let res = checkAvailability([{ isAvailable: true }, { isAvailable: true }])
+// console.log(res);
+// res = checkAvailability([{ isAvailable: true }, { isAvailable: false }])
+// console.log(res);
+// res = checkAvailability([{ isAvailable: false }])
+// console.log(res);
+// res = checkAvailability([])
+// console.log(res);
+
+
+//12ANS
+// const groupItems = (cart) => {
+//   let dis = {Food : [], Drink : []};
+//   for(let item of cart){
+//     if(item.type === "food"){
+//         dis.Food.push(item);
+//     }else if(item.type === "drink"){
+//         dis.Drink.push(item)
+//     }
+//   }
+//   return dis
+// };
+// let res = groupItems([{name: "A", type: "food"}, {name: "B", type: "drink"}])
+// console.log(res);
+// res = groupItems([{name: "A", type: "food"}])
+// console.log(res);
+// res = groupItems([])
+// console.log(res);
+// res = groupItems([{name: "X", type: "unknown"}])
+// console.log(res);
 
 // Module 3: User Profiles & Settings Data
 
