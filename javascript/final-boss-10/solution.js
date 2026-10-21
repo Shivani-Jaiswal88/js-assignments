@@ -347,6 +347,100 @@
 
 // Module 3: User Profiles & Settings Data
 
+//1ANS
+// const mergeSettings = (defaults, userSettings) => {
+// return {...defaults,...userSettings}
+// };
+// let res = mergeSettings({theme: "light", autoplay: true}, {theme: "dark"})
+// console.log(res);
+// res = mergeSettings({quality: "720p"}, {quality: "1080p"})
+// console.log(res);
+// res = mergeSettings({a: 1}, {})
+// console.log(res);
+// res =mergeSettings({}, {b: 2})
+// console.log(res);
+
+//2ANS
+// const getActiveProfile = (profiles) => {
+//   for(let item of profiles){
+//     if(item.isActive === true){
+//         return item
+//     }
+//   }
+// };
+// let res = getActiveProfile([{name: "A", isActive: false}, {name: "B", isActive: true}])
+// console.log(res);
+// res =getActiveProfile([{name: "C", isActive: false}]) 
+// console.log(res);
+// res = getActiveProfile([])
+// console.log(res);
+// res = getActiveProfile([{name: "D", isActive: true}, {name: "E", isActive: true}])
+// console.log(res);
+
+//3ANS
+// const toggleAutoplay = (settings) => {
+//   let result =  !settings.autoplay
+//   settings.autoplay = result
+//   return settings
+// };
+// let res = toggleAutoplay({autoplay: true})
+// console.log(res);
+// res = toggleAutoplay({autoplay: false})
+// console.log(res);
+// res = toggleAutoplay({theme: "dark", autoplay: true})
+// console.log(res);
+// res = toggleAutoplay({})
+// console.log(res);
+
+
+//4ANS
+// const addToHistory = (history, movieId) => {
+//   if(!history.includes(movieId)){
+//     return  history.push(movieId)
+// }
+//     return history
+// }
+// let res = addToHistory(["m1", "m2"], "m3")
+// console.log(res);
+// res = addToHistory(["m1", "m2"], "m2")
+// console.log(res);
+// res = addToHistory([], "m1")
+// console.log(res);
+// res = addToHistory(["x"], "y")
+// console.log(res);
+
+//5ANS
+// const isPremiumUser = (user) => {
+//   if(user.subscriptionPlan  === "Gold" || user.subscriptionPlan === "Platinum" &&  user.isExpired === false){
+//     return true
+//   }else{
+//     return false
+//   }
+// };
+// let res = isPremiumUser({subscriptionPlan: "Gold", isExpired: false})
+// console.log(res);
+// res = isPremiumUser({subscriptionPlan: "Silver", isExpired: false})
+// console.log(res);
+// res = isPremiumUser({subscriptionPlan: "Platinum", isExpired: true})
+// console.log(res);
+// res = isPremiumUser({})
+// console.log(res);
+
+//6ANS
+// const getGenres = (profile) => {
+//   return profile.preferences?.genres ?? []
+// };
+// let res = getGenres({preferences: {genres: ["Action", "Sci-Fi"]}})
+// console.log(res);
+// res = getGenres({preferences: {}})
+// console.log(res);
+// res = getGenres({})
+// console.log(res);
+// res = getGenres({preferences: {genres: []}})
+// console.log(res);
+
+
+
 
 // Module 4: Inventory & Content Management
 
