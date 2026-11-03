@@ -439,6 +439,51 @@
 // res = getGenres({preferences: {genres: []}})
 // console.log(res);
 
+//7ANS
+// const removeSetting = (settings, keyToRemove) => {
+//     delete settings[keyToRemove]
+//     return settings
+// };
+// let res = removeSetting({ flash: true, volume: 50 }, "flash")
+// console.log(res);
+// res = removeSetting({a: 1, b: 2}, "c")
+// console.log(res);
+// res = removeSetting({}, "a")
+// console.log(res);
+// res = removeSetting({test: 1}, "test")
+// console.log(res);
+
+//8ANS
+// const totalEpisodesWatched = (watchseries) =>{
+//     let totalseries = 0 
+//     for(let countseries in watchseries){
+//         totalseries += watchseries[countseries].length
+//     }
+//     return totalseries
+// }
+// let res = totalEpisodesWatched({ "Friends": [1,2,3], "Dark": [1,2] })
+// console.log(res);
+// res = totalEpisodesWatched({ "Got": [10] })
+// console.log(res);
+// res = totalEpisodesWatched({})
+// console.log(res);
+// res = totalEpisodesWatched({ "ShowA": [], "ShowB": [1] })
+// console.log(res);
+
+//9ANS
+// const updateAvatar = (userProfile, newAvatarUrl) => {
+//   return {...userProfile,avatar : newAvatarUrl}
+// };
+// let res = updateAvatar({name: "Sam"}, "url1")
+// console.log(res);
+// res = updateAvatar({name: "Sam", avatar: "old"}, "new")
+// console.log(res);
+// res = updateAvatar({}, "img.png")
+// console.log(res);
+// res = updateAvatar({a: 1}, "")
+// console.log(res);
+
+
 
 
 
