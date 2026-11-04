@@ -483,8 +483,61 @@
 // res = updateAvatar({a: 1}, "")
 // console.log(res);
 
+const formatProfileName = (fullName) => {
+   const parts = fullName.trim().split(/\s+/);
+  const firstName = parts[0];
+  const lastName = parts[1];
+ if (lastName) {
+    // Last name ka pehla letter nikaal kar "." lagayein
+    return `${firstName} ${lastName.charAt(0).toUpperCase()}.`;
+  }
+
+  // 3. Agar sirf ek hi naam hai (no last name), toh use hi return kar dein
+  return firstName;
+}
 
 
+let res = formatProfileName("Rahul sharma")
+console.log(res);
+res = formatProfileName("Amit")
+console.log(res);
+res = formatProfileName("Neha Singh Rajput")
+console.log(res);
+res = formatProfileName("")
+console.log(res);
+
+
+
+
+//11ANS
+// const canWatchContent = (profile, rating) => {
+//   if(profile.isKidsMode === true &&  rating === "R" || rating === "PG-13"){
+//     return false
+//   }
+//   return true
+// };
+// let res = canWatchContent({isKidsMode: true}, "R")
+// console.log(res);
+// res= canWatchContent({isKidsMode: true}, "G")
+// console.log(res);
+// res = canWatchContent({isKidsMode: false}, "R")
+// console.log(res);
+// res = canWatchContent({isKidsMode: true}, "PG-13")
+// console.log(res);
+
+//12ANS
+// const clearHistory = (userProfile) => {
+//    userProfile.watchHistory = []
+//   return userProfile
+// };
+// let res = clearHistory({name: "A", watchHistory: ["m1", "m2"]})
+// console.log(res);
+// res = clearHistory({name: "B", watchHistory: []})
+// console.log(res);
+// res = clearHistory({name: "C"})
+// console.log(res);
+// res = clearHistory({})
+// console.log(res);
 
 
 // Module 4: Inventory & Content Management
