@@ -483,28 +483,24 @@
 // res = updateAvatar({a: 1}, "")
 // console.log(res);
 
-const formatProfileName = (fullName) => {
-   const parts = fullName.trim().split(/\s+/);
-  const firstName = parts[0];
-  const lastName = parts[1];
- if (lastName) {
-    // Last name ka pehla letter nikaal kar "." lagayein
-    return `${firstName} ${lastName.charAt(0).toUpperCase()}.`;
-  }
-
-  // 3. Agar sirf ek hi naam hai (no last name), toh use hi return kar dein
-  return firstName;
-}
-
-
-let res = formatProfileName("Rahul sharma")
-console.log(res);
-res = formatProfileName("Amit")
-console.log(res);
-res = formatProfileName("Neha Singh Rajput")
-console.log(res);
-res = formatProfileName("")
-console.log(res);
+//10ANS
+// const formatProfileName = (fullName) => {
+//     const parts = fullName.trim().split(/\s+/);
+//     const firstName = parts[0];
+//     const lastName = parts[1];
+//     if (lastName) {
+//         return `${firstName} ${lastName.charAt(0).toUpperCase()}.`;
+//     }
+//     return firstName;
+// }
+// let res = formatProfileName("Rahul sharma")
+// console.log(res);
+// res = formatProfileName("Amit")
+// console.log(res);
+// res = formatProfileName("Neha Singh Rajput")
+// console.log(res);
+// res = formatProfileName("")
+// console.log(res);
 
 
 
