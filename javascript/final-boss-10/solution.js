@@ -502,9 +502,6 @@
 // res = formatProfileName("")
 // console.log(res);
 
-
-
-
 //11ANS
 // const canWatchContent = (profile, rating) => {
 //   if(profile.isKidsMode === true &&  rating === "R" || rating === "PG-13"){
@@ -538,6 +535,160 @@
 
 // Module 4: Inventory & Content Management
 
+//1ANS
+// const getLowStockItems = (inventory, threshold) => {
+//   for(let item of inventory){
+//     if(item.qty < threshold){
+//         return item
+//     }
+//   }
+//   return []
+// };
+
+// let res = getLowStockItems([{id: 1, qty: 5}, {id: 2, qty: 15}], 10)
+// console.log(res);
+// res = getLowStockItems([{id: 1, qty: 20}], 10)
+// console.log(res);
+// res = getLowStockItems([], 5)
+// console.log(res);
+// res = getLowStockItems([{id: 1, qty: 1}], 2)
+// console.log(res);
+
+//2ANS
+// const extractSKUs = (products) => {
+//   let skustring = []
+//   for(let item of products){
+//     skustring.push(item.sku)
+//   }
+//   return skustring
+// };
+// let res = extractSKUs([{sku: "A123", name: "Pen"}, {sku: "B456", name: "Book"}])
+// console.log(res);
+// res = extractSKUs([{sku: "X999"}])
+// console.log(res);
+// res = extractSKUs([])
+// console.log(res);
+// res = extractSKUs([{name: "NoSKU"}])
+// console.log(res);
+
+//4ANS
+// const searchProducts = (products, keyword) => {
+// return  products.filter(item => item.name.toLowerCase().includes(keyword))
+
+// };
+// let res = searchProducts([{name: "Red Apple"}, {name: "Banana"}], "apple")
+// console.log(res);
+// res = searchProducts([{name: "Phone"}, {name: "Tablet"}], "LAPTOP")
+// console.log(res);
+// res = searchProducts([], "a")
+// console.log(res);
+// res = searchProducts([{name: "Bat"}, {name: "Batman"}], "bat")
+// console.log(res);
+
+//5 ANS
+// const calculateTotalInventoryValue = (inventory) => {
+//   let sum = 0
+//   for(let item of inventory){
+//     sum += item.qty * item.price
+//   }
+//   return sum
+// };
+// let res = calculateTotalInventoryValue([{qty: 10, price: 5}, {qty: 2, price: 100}])
+// console.log(res);
+// res = calculateTotalInventoryValue([{qty: 1, price: 50}])
+// console.log(res);
+// res =  calculateTotalInventoryValue([])
+// console.log(res);
+// res = calculateTotalInventoryValue([{qty: 0, price: 10}])
+// console.log(res);
+
+//7ANS
+// const sortByQuantityAsc = (inventory) => {
+// return inventory.sort((a,b) => a.qty - b.qty);
+
+// };
+// let res = sortByQuantityAsc([{qty: 50}, {qty: 10}])
+// console.log(res);
+// res = sortByQuantityAsc([{qty: 5}, {qty: 5}])
+// console.log(res);
+// res = sortByQuantityAsc([])
+// console.log(res);
+// res = sortByQuantityAsc([{qty: 2}, {qty: 1}, {qty: 3}])
+// console.log(res);
+
+//8ANS
+// const getUniqueCategories = (inventory) => {
+//   let result = []
+//   for(let item of inventory){
+//     if (!result.includes(item.category)) {
+//    result.push(item.category)
+// }
+
+//   }
+//   return result
+// };
+// let res =  getUniqueCategories([{category: "A"}, {category: "B"}, {category: "A"}])
+// console.log(res);
+// res = getUniqueCategories([{category: "X"}])
+// console.log(res);
+// res = getUniqueCategories([])
+// console.log(res);
+// res = getUniqueCategories([{category: "A"}, {category: "A"}, {category: "A"}])
+// console.log(res);
+
+//9ANS
+// const capInventoryQuantities = (inventory) => {
+//   for(let item of inventory){
+//     if(item.qty > 100){
+//     item.qty = 100
+//     }
+//   }
+//   return inventory
+// };
+// let res = capInventoryQuantities([{qty: 150}, {qty: 50}])
+// console.log(res);
+// res = capInventoryQuantities([{qty: 90}])
+// console.log(res);
+// res = capInventoryQuantities([])
+// console.log(res);
+// res = capInventoryQuantities([{qty: 100}, {qty: 101}])
+// console.log(res);
+
+//10ANS
+// const productExists = (inventory, id) => {
+//     for (let item of inventory) {
+//         if (item.id === id) {
+//             return true
+//         }
+//     }
+//     return false
+// };
+// let res = productExists([{ id: "p1" }, { id: "p2" }], "p2")
+// console.log(res);
+// res = productExists([{ id: "p1" }], "p3")
+// console.log(res);
+// res = productExists([], "p1")
+// console.log(res);
+// res = productExists([{ id: 1 }], 1)
+// console.log(res);
+
+//11ANS
+// const addSaleTag = (inventory) => {
+//   return inventory.map(item => ({
+//     ...item,
+//     tag : "SALE2026" 
+//   }))
+    
+
+// };
+// let res = addSaleTag([{ name: "A" }])
+// console.log(res);
+// res = addSaleTag([{ id: 1, tag: "OLD" }])
+// console.log(res);
+// res = addSaleTag([])
+// console.log(res);
+// res = addSaleTag([{ a: 1 }, { b: 2 }])
+// console.log(res);
 
 // Module 5: Analytics & Report Generation
 
