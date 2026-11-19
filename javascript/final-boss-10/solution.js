@@ -1,6 +1,6 @@
 // Module 1: User Registration & Onboarding Pipeline
 
-//ANS
+//1ANS
 // const normalizeEmail = (email) => {
 //   if(typeof email === "string"){
 //     return email.toLowerCase().trim()
@@ -689,6 +689,110 @@
 // console.log(res);
 // res = addSaleTag([{ a: 1 }, { b: 2 }])
 // console.log(res);
+
+
+//1ANS
+// const calculateAvgProgress = (students) => {
+//     if(students.length === 0){
+//         return 0
+//     }
+//     let sum = 0
+   
+//   for(let item of students){
+//      sum += item.progress
+//   }
+//   let result = sum / students.length
+//   return Math.round(result)
+// };
+// let res = calculateAvgProgress([{progress: 50}, {progress: 100}])
+// console.log(res);
+// res = calculateAvgProgress([{progress: 33}, {progress: 33}, {progress: 33}])
+// console.log(res);
+// res = calculateAvgProgress([])
+// console.log(res);
+// res = calculateAvgProgress([{progress: 0}, {progress: 100}])
+// console.log(res);
+
+//2ANS
+// const createRevenueTracker = () => {
+//   let total = 0
+//   function addacount(acount){
+//     total += acount
+//     return total
+
+//   }
+//   return addacount
+// };
+// const tracker = createRevenueTracker(); tracker(100);
+// console.log(tracker(50));
+// const t2 = createRevenueTracker(); t2(10);
+// console.log(t2(10));
+
+//3NAS
+// const getTopScorerName = (students) => {
+//     let num = 0;
+//     let toper = ""
+//   for(let item of students){
+//     if(item.score > num){
+//         num = item.score
+//         toper = item.name
+//     }
+//   }
+//   return toper || null;
+// };
+// let res = getTopScorerName([{name: "A", score: 80}, {name: "B", score: 95}])
+// console.log(res);
+// res = getTopScorerName([{name: "X", score: 50}])
+// console.log(res);
+// res = getTopScorerName([])
+// console.log(res);
+// res = getTopScorerName([{name: "C", score: 90}, {name: "D", score: 90}])
+// console.log(res);
+
+//4ANS
+// const formatDuration = (totalSeconds) => {
+//   let minutes = Math.floor(totalSeconds / 60)
+// let seconds = totalSeconds % 60
+// return `${minutes}m ${seconds}s` 
+// };
+// let res = formatDuration(130);
+// console.log(res);
+// res = formatDuration(60)
+// console.log(res);
+// res = formatDuration(45)
+// console.log(res);
+// res = formatDuration(0)
+// console.log(res);
+// res = formatDuration(150)
+// console.log(res);
+
+//5ANS
+// const getGrade = (marks) => {
+//   if(marks >= 90){
+//     return "A"
+//   }else if(marks >= 75 || marks >= 89){
+//     return "B"
+//   }else if(marks >= 50 || marks >= 74){
+//     return "C"
+//   }else{
+//     return "F"
+//   }
+// };
+// let res = getGrade(95);
+// console.log(res);
+// res = getGrade(80);
+// console.log(res);
+// res = getGrade(55);
+// console.log(res);
+// res = getGrade(30)
+// console.log(res);
+
+
+
+
+
+
+
 
 // Module 5: Analytics & Report Generation
 
