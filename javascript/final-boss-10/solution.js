@@ -817,23 +817,23 @@
 // res = mergeTags(["A", "A"], [])
 // console.log(res);
 
+//10ANS
+// const objectToQueryParams = (params) => {
+//   let arr = Object.entries(params)
+// let result = arr.map(([key, value]) => {
+//     return `${key}=${value}`;
+// });
+// return result.join("&")
+// };
 
-const objectToQueryParams = (params) => {
-  let arr = Object.entries(params)
-let result = arr.map(([key, value]) => {
-    return `${key}=${value}`;
-});
-return result.join("&")
-};
-
-let res = objectToQueryParams({year: 2026, course: "react"})
-console.log(res);
-res =objectToQueryParams({id: 1})
-console.log(res);
-res = objectToQueryParams({})
-console.log(res);
-res = objectToQueryParams({a: 1, b: 2, c: 3})
-console.log(res);
+// let res = objectToQueryParams({year: 2026, course: "react"})
+// console.log(res);
+// res =objectToQueryParams({id: 1})
+// console.log(res);
+// res = objectToQueryParams({})
+// console.log(res);
+// res = objectToQueryParams({a: 1, b: 2, c: 3})
+// console.log(res);
 
 
 // Module 6: Role-Based Access & Security Rules
