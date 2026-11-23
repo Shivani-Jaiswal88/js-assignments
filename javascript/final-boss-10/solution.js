@@ -691,6 +691,8 @@
 // console.log(res);
 
 
+// Module 5: Analytics & Report Generation
+
 //1ANS
 // const calculateAvgProgress = (students) => {
 //     if(students.length === 0){
@@ -787,14 +789,51 @@
 // res = getGrade(30)
 // console.log(res);
 
+//7ANS
+// const getPassedEmails = (students) => {
+//   let result = students.filter((num)=> num.score >= 50 )
+//   return result.map( email => email.email)
+// };
+
+// let res = getPassedEmails([{email: "a@x.com", score: 60}, {email: "b@x.com", score: 40}])
+// console.log(res);
+// res = getPassedEmails([{email: "c", score: 30}])
+// console.log(res);
+// res = getPassedEmails([])
+// console.log(res);
+// res = getPassedEmails([{email: "d", score: 50}])
+// console.log(res);
+
+//9ANS
+// const mergeTags = (tags1, tags2) => {
+//   return  [...new Set([...tags1 , ...tags2])]
+// };
+// let res = mergeTags(["JS", "React"], ["React", "CSS"])
+// console.log(res);
+// res = mergeTags(["A"], ["B"])
+// console.log(res);
+// res = mergeTags([], ["X"])
+// console.log(res);
+// res = mergeTags(["A", "A"], [])
+// console.log(res);
 
 
+const objectToQueryParams = (params) => {
+  let arr = Object.entries(params)
+let result = arr.map(([key, value]) => {
+    return `${key}=${value}`;
+});
+return result.join("&")
+};
 
-
-
-
-
-// Module 5: Analytics & Report Generation
+let res = objectToQueryParams({year: 2026, course: "react"})
+console.log(res);
+res =objectToQueryParams({id: 1})
+console.log(res);
+res = objectToQueryParams({})
+console.log(res);
+res = objectToQueryParams({a: 1, b: 2, c: 3})
+console.log(res);
 
 
 // Module 6: Role-Based Access & Security Rules
