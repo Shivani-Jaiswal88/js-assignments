@@ -678,7 +678,7 @@
 //     ...item,
 //     tag : "SALE2026" 
 //   }))
-    
+
 
 // };
 // let res = addSaleTag([{ name: "A" }])
@@ -699,7 +699,7 @@
 //         return 0
 //     }
 //     let sum = 0
-   
+
 //   for(let item of students){
 //      sum += item.progress
 //   }
@@ -817,24 +817,141 @@
 // res = mergeTags(["A", "A"], [])
 // console.log(res);
 
+//10ANS
+// const objectToQueryParams = (params) => {
+//   let arr = Object.entries(params)
+// let result = arr.map(([key, value]) => {
+//     return `${key}=${value}`;
+// });
+// return result.join("&")
+// };
 
-const objectToQueryParams = (params) => {
-  let arr = Object.entries(params)
-let result = arr.map(([key, value]) => {
-    return `${key}=${value}`;
-});
-return result.join("&")
-};
+// let res = objectToQueryParams({year: 2026, course: "react"})
+// console.log(res);
+// res =objectToQueryParams({id: 1})
+// console.log(res);
+// res = objectToQueryParams({})
+// console.log(res);
+// res = objectToQueryParams({a: 1, b: 2, c: 3})
+// console.log(res);
 
-let res = objectToQueryParams({year: 2026, course: "react"})
-console.log(res);
-res =objectToQueryParams({id: 1})
-console.log(res);
-res = objectToQueryParams({})
-console.log(res);
-res = objectToQueryParams({a: 1, b: 2, c: 3})
-console.log(res);
+// let res = [{id: 1, status: "active"}, {id: 2, status: "frozen"}]
+// let result = []
+// for(let item of res){
+// if(item.status === "frozen"){
+
+
+// }else{
+//      result.push(item)
+// }
+
+// }
+// console.log(result);
+
+
+//11ANS
+// const getActiveUsers = (users) => {
+//   let update = []
+//   for(let user of users){
+//     if(user.status === "frozen" || user.status === "inactive"){
+
+//     }else{
+//         update.push(user)
+//     }
+//   }
+//   return update
+// };
+// let res = getActiveUsers([{id: 1, status: "active"}, {id: 2, status: "frozen"}])
+// console.log(res);
+// res = getActiveUsers([{id: 1, status: "inactive"}])
+// console.log(res);
+// res = getActiveUsers([])
+// console.log(res);
+// res = getActiveUsers([{id: 1, status: "active"}, {id: 2, status: "active"}])
+// console.log(res);
+
+//12ANS
+// const getNextReportId = (() => {
+//   let id = 0
+//   function inner(){
+//     id ++
+//     return `"RPT-${id}"`
+//   }
+//   return inner
+// })();
+// let res= getNextReportId()
+// console.log(res);
+// res= getNextReportId()
+// console.log(res);
+// res= getNextReportId()
+// console.log(res);
+// res= getNextReportId()
+// console.log(res);
 
 
 // Module 6: Role-Based Access & Security Rules
+
+//1ANS
+// const canAccessRoute = (allowedRoutes, targetRoute) => {
+//     return allowedRoutes.includes(targetRoute)
+// };
+// let res = canAccessRoute(["/home", "/admin/settings"], "/admin/settings")
+// console.log(res);
+// res = canAccessRoute(["/home", "/profile"], "/admin/settings")
+// console.log(res);
+// res = canAccessRoute([], "/home")
+// console.log(res);
+// res = canAccessRoute(["/*"], "/*")
+// console.log(res);
+
+
+//3ANS
+// const isFeatureEnabled = (featuresObj, featureName) => {
+//     return featuresObj[featureName] ? true : false
+// };
+// let res = isFeatureEnabled({betaUI: true}, "betaUI")
+// console.log(res);
+// res = isFeatureEnabled({betaUI: true}, "newChart")
+// console.log(res);
+// res = isFeatureEnabled({newChart: false}, "newChart")
+// console.log(res);
+// res = isFeatureEnabled({}, "any")
+// console.log(res);
+
+
+//5ANS
+// const isValidApiKey = (key) => {
+//   return key.includes("sk") &&  key.length === 32 ? true : false
+// };
+// let res = isValidApiKey("sk_12345678901234567890123456789")
+// console.log(res);
+// res = isValidApiKey("sk_short")
+// console.log(res);
+// res = isValidApiKey("pk_12345678901234567890123456789")
+// console.log(res);
+// res = isValidApiKey("")
+// console.log(res);
+
+
+const redactPayload = (payload) => {
+let result = ""
+if(payload?.password?.length){
+    result = "*".repeat(payload?.password?.length)
+    payload.password = result
+   
+}if(payload?.credit_card?.length){
+    result = "*".repeat(payload?.credit_card?.length)
+     payload.credit_card = result
+}
+return payload
+ 
+};
+let res = redactPayload({name: "A", password: "123"},{credit_card: "1111-2222"})
+console.log(res);
+res= redactPayload({credit_card: "1111-2222"})
+console.log(res);
+res = redactPayload({name: "B", age: 20})
+console.log(res);
+res = redactPayload({})
+console.log(res);
 
