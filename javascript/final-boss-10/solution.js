@@ -825,7 +825,6 @@
 // });
 // return result.join("&")
 // };
-
 // let res = objectToQueryParams({year: 2026, course: "react"})
 // console.log(res);
 // res =objectToQueryParams({id: 1})
@@ -839,8 +838,6 @@
 // let result = []
 // for(let item of res){
 // if(item.status === "frozen"){
-
-
 // }else{
 //      result.push(item)
 // }
@@ -854,7 +851,6 @@
 //   let update = []
 //   for(let user of users){
 //     if(user.status === "frozen" || user.status === "inactive"){
-
 //     }else{
 //         update.push(user)
 //     }
@@ -932,26 +928,26 @@
 // res = isValidApiKey("")
 // console.log(res);
 
-
-const redactPayload = (payload) => {
-let result = ""
-if(payload?.password?.length){
-    result = "*".repeat(payload?.password?.length)
-    payload.password = result
+//6ANS
+// const redactPayload = (payload) => {
+// let result = ""
+// if(payload?.password?.length){
+//     result = "*".repeat(payload?.password?.length)
+//     payload.password = result
    
-}if(payload?.credit_card?.length){
-    result = "*".repeat(payload?.credit_card?.length)
-     payload.credit_card = result
-}
-return payload
+// }if(payload?.credit_card?.length){
+//     result = "*".repeat(payload?.credit_card?.length)
+//      payload.credit_card = result
+// }
+// return payload
  
-};
-let res = redactPayload({name: "A", password: "123"},{credit_card: "1111-2222"})
-console.log(res);
-res= redactPayload({credit_card: "1111-2222"})
-console.log(res);
-res = redactPayload({name: "B", age: 20})
-console.log(res);
-res = redactPayload({})
-console.log(res);
+// };
+// let res = redactPayload({name: "A", password: "123"},{credit_card: "1111-2222"})
+// console.log(res);
+// res= redactPayload({credit_card: "1111-2222"})
+// console.log(res);
+// res = redactPayload({name: "B", age: 20})
+// console.log(res);
+// res = redactPayload({})
+// console.log(res);
 
